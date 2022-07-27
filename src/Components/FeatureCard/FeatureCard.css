@@ -1,0 +1,34 @@
+.featureCard {
+    padding: 3rem 2rem;
+    flex-direction: column;
+    gap: 2rem;
+    border-style: solid;
+    border-color: var(--grey-border);
+    border-width: 0 1px 1px 0;
+    align-items: center;
+    transition: box-shadow .2s;
+    transition-timing-function: ease;
+    width: 30rem;
+    flex-grow: 1;
+}
+
+.featureCard:hover {
+    box-shadow: 0 40px 120px -20px rgb(0 0 0 / 60%);
+}
+
+.featureCard:hover .featCardIcons {
+    color: var(--primary-color);
+}
+
+.featCardHeading {
+    font-size: 2rem;
+}
+
+.featCardIcons {
+    font-size: 5rem;
+    color: var(--bg-blackShade);
+}
+
+.featCardBody {
+    text-align: center;
+}
