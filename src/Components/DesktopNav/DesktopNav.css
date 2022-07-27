@@ -1,0 +1,27 @@
+.desktopNav {
+    color: white;
+    padding: 0 2rem 0 2rem;
+}
+
+.navLinks {
+    list-style: none;
+    padding: .5rem;
+    border-radius: 2px;
+    transition: background-color .3s;
+}
+
+.navLinks:hover {
+    background-color: var(--primary-color);
+}
+
+.allNavLinks {
+    gap: 2rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media screen and (max-width:768px) {
+    .desktopNav {
+        display: none;
+    }
+}
