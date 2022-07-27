@@ -1,0 +1,22 @@
+.userCard {
+    background-color: var(--darkblue-color);
+    padding: 3rem 0 3rem 0;
+    border-radius: var(--border-radius);
+    justify-content: space-between;
+}
+
+.userCardBody {
+    padding-left: 3rem;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.userCardImg {
+    padding: 2rem 0 2rem 2rem;
+}
+
+@media screen and (min-width:768px) {
+    .AddCard {
+        width: min-content;
+    }
+}
