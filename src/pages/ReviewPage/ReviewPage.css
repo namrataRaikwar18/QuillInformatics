@@ -1,0 +1,85 @@
+.reviewImage {
+    background-image: url('https://techindustan.com/wp-content/uploads/2017/01/techindustan_client_says.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 1300px;
+    background-attachment: fixed;
+    filter: brightness(0.30);
+}
+
+.reviewSection {
+    position: relative;
+}
+
+.reviewImageText {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.reviewImageText::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 70px;
+    height: 2px;
+}
+
+.reviewCardsContainer {
+    position: absolute;
+    top: 10%;
+    padding: 2rem;
+    flex-direction: column;
+    gap: 7rem;
+    height: inherit;
+}
+
+.technologies {
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: flex-start;
+}
+
+.alltechImages {
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.techImg {
+    width: 60px;
+    height: 60px;
+}
+
+.allReviewCards {
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px) {
+    .reviewCardsContainer {
+        height: fit-content;
+    }
+
+    .reviewImage {
+        height: 1000px;
+    }
+
+    .allReviewCards {
+        flex-direction: row;
+        gap: 2rem;
+
+    }
+}
+
+@media screen and (min-width:950px) {
+    .reviewImage {
+        height: 850px;
+    }
+}
