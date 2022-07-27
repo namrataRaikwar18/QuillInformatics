@@ -1,0 +1,29 @@
+.AddCard {
+    width: 35rem;
+    position: relative;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.readMoreBtn {
+    position: absolute;
+    bottom: 40%;
+    left: -3%;
+}
+
+.addDetails {
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+@media screen and (min-width:768px) {
+    .readMoreBtn {
+        bottom: 40%;
+    }
+
+    .AddCard {
+        width: min-content;
+    }
+
+}
