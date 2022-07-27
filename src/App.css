@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --border-radius: 2px;
+    --primary-color: #1789b3;
+    --bg-greyShade: rgba(0, 0, 0, .5);
+    --bg-blackShade: rgba(0, 0, 0, .65);
+    --grey-border: rgba(0, 0, 0, .1);
+    --darkblue-color: #34495e;
+    --footer-color: #161515;
+    --nav-bg: #333;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body,
+html {
+    width: 100%;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-size: 1.8rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.boldText {
+    font-weight: bold;
+}
+
+.greyText {
+    color: #343434;
+}
+
+.lightGreyText {
+    color: rgb(151, 149, 149);
+}
+
+.whiteText {
+    color: white;
+}
+
+.primaryColorText {
+    color: var(--primary-color);
+}
+
+.bigText {
+    font-size: 3.5rem;
+}
+
+.divider {
+    border-bottom: 3px solid var(--grey-border);
+}
+
+.lineHeight {
+    line-height: 3.5rem;
+}
+
+.smallDivider {
+    border-bottom: 3px solid var(--grey-border);
+    width: 55px;
+}
+
+.smallWhiteDivider {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.637);
+    width: 55px;
+}
+
+.whiteDivider {
+    border-bottom: 1px solid rgba(165, 165, 165, 0.637);
+}
+
+.btn {
+    padding: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.input {
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    outline: none;
+    border: none;
+}
+
+.whiteBorderBtn {
+    border: 2px solid white;
+    font-weight: bold;
+}
+
+.navIcons {
+    cursor: pointer;
+}
+
+.navLinks {
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 48%;
+    }
+
+}
