@@ -1,14 +1,15 @@
+import { useState } from 'react'
 import { FaFacebookF, FaPinterestP } from 'react-icons/fa'
 import { BsTwitter } from 'react-icons/bs'
 import { IoSearch } from 'react-icons/io5'
 import { ImCross } from 'react-icons/im'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import './Navbar.css'
-import { DesktopNav } from '../DesktopNav/DesktopNav'
+import { DesktopNav, SearchModal } from '../index'
 import { useSearchModal } from '../../context/searchModalContext'
-import { SearchModal } from '../SearchModal/SearchModal'
+import './Navbar.css'
 
 const Navbar = ({ openDrawer, setOpenDrawer }) => {
+  const [scrollNav, setScrollNav] = useState(false)
   const { searchModal, setSearchModal } = useSearchModal()
 
   const hamburgerHandler = () => {
@@ -17,14 +18,25 @@ const Navbar = ({ openDrawer, setOpenDrawer }) => {
 
   return (
     <>
-      <header className="header displayFlex">
+      {scrollNav ? (
+        <DesktopNav scrollNav={scrollNav} setScrollNav={setScrollNav} />
+      ) : null}
+      <header
+        className={scrollNav ? 'hide header displayFlex' : 'header displayFlex'}
+      >
         <img
           src="https://techindustan.com/wp-content/uploads/2016/02/tecHindustan_logo-2.png"
           alt="logo"
-          className="logoDesktopImg"
+          className={scrollNav ? 'hide' : 'logoDesktopImg'}
         />
         <section className="navHeader">
-          <nav className="nav linkNav displayFlex">
+          <nav
+            className={
+              scrollNav
+                ? 'hide nav linkNav displayFlex'
+                : 'nav linkNav displayFlex'
+            }
+          >
             <div className="navIcons displayFlex">
               <FaFacebookF />
               <BsTwitter />
@@ -46,18 +58,24 @@ const Navbar = ({ openDrawer, setOpenDrawer }) => {
               </div>
             )}
           </nav>
-          <DesktopNav />
-          <nav className=" nav hamburgerNav displayFlex ">
+          <DesktopNav scrollNav={scrollNav} setScrollNav={setScrollNav} />
+          <nav
+            className={
+              scrollNav
+                ? 'hide nav hamburgerNav displayFlex'
+                : 'nav hamburgerNav displayFlex'
+            }
+          >
             <img
               src="https://techindustan.com/wp-content/uploads/2016/02/tecHindustan_logo-2.png"
               alt="logo"
-              className="logo "
+              className="logo"
             />
             <div className="navIcons hamburger">
               <GiHamburgerMenu onClick={hamburgerHandler} />
             </div>
           </nav>
-          {searchModal ? <SearchModal /> : null}
+          {searchModal ? <SearchModal scrollNav={scrollNav} /> : null}
         </section>
       </header>
     </>

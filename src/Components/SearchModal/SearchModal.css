@@ -1,6 +1,5 @@
 .searchModalContainer {
     position: relative;
-    /* border: 1px solid red; */
     height: 15rem;
     background-color: transparent;
 }
@@ -21,8 +20,19 @@
     border-bottom: 1px solid var(--grey-border);
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:770px) {
+    .onScrollSerchModal{
+        position: absolute;
+        background-color: white;
+        right: 5%;
+        z-index: 10;
+        top: 80%;
+        padding: 3rem;
+        box-shadow: 1px 1px 5px 1px var(--grey-border);
+    }
+
     .searchModal {
         top: 23%;
     }
+
 }

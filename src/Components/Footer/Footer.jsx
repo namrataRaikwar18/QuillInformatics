@@ -17,9 +17,16 @@ const Footer = () => {
         <div>
           <h2 className="">AUSTRALIA</h2>
           <div className="address lightGreyText">
-            <p>12 A, Kelsey Street, Kidman Park 5025, SA</p>
-            <p>Email: hi@techindustan.com</p>
-            <p>Phone: +61 480 022 495</p>
+            <p>
+              <small>12 A, Kelsey Street, Kidman Park 5025, SA</small>
+            </p>
+
+            <p>
+              <small>Email: hi@techindustan.com</small>
+            </p>
+            <p>
+              <small>Phone: +61 480 022 495</small>
+            </p>
           </div>
         </div>
 
@@ -27,20 +34,36 @@ const Footer = () => {
           <h2>SWEDEN</h2>
           <div className="address lightGreyText">
             Karlstad Innovation Park
-            <p>Sommargatan 101A</p>
-            <p>656 37 Karlstad</p>
-            <p>Email: hi@techindustan.com</p>
-            <p>Phone: +46 8 580 976 01</p>
+            <p>
+              <small>Sommargatan 101A</small>
+            </p>
+            <p>
+              <small>656 37 Karlstad</small>
+            </p>
+            <p>
+              <small>Email: hi@techindustan.com</small>
+            </p>
+            <p>
+              <small>Phone: +46 8 580 976 01</small>
+            </p>
           </div>
         </div>
 
         <div>
           <h2>USA</h2>
           <div className="address lightGreyText">
-            <p>5701, Lonetree Blvd, Suite # 313, Rocklin,</p>
-            <p>CA, 95765</p>
-            <p>Email: hi@techindustan.com</p>
-            <p>Phone: 1-415-980-2495</p>
+            <p>
+              <small>5701, Lonetree Blvd, Suite # 313, Rocklin,</small>
+            </p>
+            <p>
+              <small>CA, 95765</small>
+            </p>
+            <p>
+              <small>Email: hi@techindustan.com</small>
+            </p>
+            <p>
+              <small>Phone: 1-415-980-2495</small>
+            </p>
           </div>
         </div>
 
@@ -48,12 +71,20 @@ const Footer = () => {
           <h2>INDIA</h2>
           <div className="address lightGreyText">
             <p>
-              902, Tower B, Bestech Business Tower Sector 66, Mohali, Punjab
-              160066
+              <small>
+                902, Tower B, Bestech Business Tower Sector 66, Mohali, Punjab
+                160066
+              </small>
             </p>
-            <p>Email: hi@techindustan.com</p>
-            <p>Phone: 0172-4660048</p>
-            <p>Sales Enquiry: +91 85709 10001</p>
+            <p>
+              <small>Email: hi@techindustan.com</small>
+            </p>
+            <p>
+              <small>Phone: 0172-4660048</small>
+            </p>
+            <p>
+              <small>Sales Enquiry: +91 85709 10001</small>
+            </p>
           </div>
         </div>
       </div>

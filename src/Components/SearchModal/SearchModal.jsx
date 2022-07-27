@@ -1,9 +1,9 @@
 import './SearchModal.css'
 import { IoSearch } from 'react-icons/io5'
 
-const SearchModal = () => {
+const SearchModal = ({scrollNav}) => {
   return (
-    <form className="searchModal">
+    <form className={scrollNav ? "onScrollSerchModal" : "searchModal" }>
       <input
         type="search"
         placeholder="SEARCH..."
