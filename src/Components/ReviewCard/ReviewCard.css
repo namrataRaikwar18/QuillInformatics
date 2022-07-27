@@ -1,0 +1,15 @@
+.reviewCardBody {
+    padding: 4rem;
+    background-color: var(--bg-greyShade);
+}
+
+.reveiwCardDetail {
+    padding-left: 3rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.reviewCard {
+    flex-direction: column;
+    gap: 3rem;
+}

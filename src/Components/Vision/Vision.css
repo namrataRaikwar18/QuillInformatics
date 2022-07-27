@@ -1,0 +1,56 @@
+.groupImage {
+    background-image: url('https://techindustan.com/wp-content/uploads/2022/05/IMG-20210222-WA0017.jpeg');
+    background-size: cover;
+    background-position: 50%;
+    height: 200px;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    filter: brightness(0.56);
+}
+
+.imgDiv {
+    position: relative;
+}
+
+.groupImageText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--primary-color);
+    text-align: center;
+}
+
+
+.visionSection {
+    flex-direction: column;
+}
+
+.visionBody {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.joinClubContainer {
+    padding: 2rem;
+}
+
+
+@media screen and (min-width:768px) {
+
+    .visionSection {
+        flex-direction: row;
+    }
+
+    .groupImage {
+        width: 45rem;
+        height: 500px;
+    }
+
+    .groupImageText {
+        top: 40%;
+    }
+}
