@@ -1,0 +1,38 @@
+.drawer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 4;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+.drawerList {
+    list-style: none;
+    width: 100%;
+    padding: 2rem;
+    border-bottom: 1px solid var(--grey-border);
+
+}
+
+.drawerList:hover,
+.closeDrawer:hover {
+    color: black;
+}
+
+.backArrowIcon {
+    border-right: 1px solid var(--grey-border);
+    padding: 3rem;
+    font-size: 3rem;
+}
+
+.back {
+    padding: 2rem;
+}
+
+
+.closeDrawer {
+    border-bottom: 1px solid var(--grey-border);
+}
