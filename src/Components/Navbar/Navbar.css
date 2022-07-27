@@ -1,0 +1,93 @@
+.nav {
+    padding: 2.5rem 1rem 2.5rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navIcons {
+    font-size: 2.2rem;
+    color: white;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.linkNav {
+    background-color: var(--nav-bg);
+}
+
+.searchIcon,
+.crossIcon {
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    /* width: fit-content; */
+    background-color: var(--bg-greyShade);
+}
+
+.crossIcon {
+    background-color: white;
+    color: black;
+}
+
+.hamburgerNav {
+    padding: 1rem 1rem 1rem 0;
+}
+
+.hamburger {
+    color: black;
+    font-size: 4rem;
+}
+
+.logo {
+    width: 50px;
+}
+
+.logoDesktopImg {
+    display: none;
+    background-color: white;
+    filter: brightness(0.79);
+    border-top: 3px solid var(--primary-color);
+    border-bottom: 2px solid black;
+}
+
+.header {
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width:770px) {
+    .nav {
+        background-color: transparent;
+        padding: 1rem 1rem 2rem 1rem;
+    }
+
+    .linkNav {
+        justify-content: flex-end;
+        gap: 3rem;
+    }
+
+    .header {
+        position: absolute;
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-between;
+        z-index: 2;
+        top: 15.8%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .navIcons {
+        font-size: 1.5rem;
+        align-items: center;
+    }
+
+    .hamburgerNav {
+        display: none;
+    }
+
+    .logoDesktopImg {
+        display: block;
+    }
+}
