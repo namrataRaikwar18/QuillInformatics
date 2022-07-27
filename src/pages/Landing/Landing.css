@@ -1,0 +1,169 @@
+.landingPage {
+    background-image: url('https://techindustan.com/wp-content/uploads/2016/02/shutterstock_298516220-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 59%;
+    height: 100vh;
+    filter: brightness(0.72);
+}
+
+.mainPage {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.imageText1 {
+    background: linear-gradient(to right, rgba(0, 0, 0, .25) 40%, rgba(0, 0, 0, 0) 100%);
+    transform: skew(-20deg);
+    top: 48rem;
+    width: fit-content;
+}
+
+.imageText p {
+    transform: skew(20deg);
+}
+
+.imageText {
+    border-radius: 1rem;
+    color: white;
+    padding: 1.5rem;
+}
+
+.imageTextContainer {
+    position: absolute;
+    top: 80%;
+    gap: 2rem;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.imageText2 {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: var(--bg-blackShade);
+    border-right: 4px solid black;
+    transform: skew(-20deg);
+}
+
+.detailCard {
+    padding: 4rem;
+    border-radius: 6px;
+    color: white;
+    margin-top: 5rem;
+    position: relative;
+    background-color: #1789b3;
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.detailCard::after {
+    position: absolute;
+    content: '';
+    background-color: rgba(0, 0, 0, .2);
+    width: 95%;
+    border-radius: 4px;
+    display: block;
+    height: 30%;
+    top: -20%;
+    left: 0;
+    transform: skewY(359deg);
+    z-index: -8;
+    transform-origin: right top;
+}
+
+.detailCard::before {
+    position: absolute;
+    content: '';
+    background-color: var(--primary-color);
+    width: 100%;
+    border-radius: 4px;
+    display: block;
+    height: 100%;
+    top: -13%;
+    left: 0;
+    transform: skewY(2deg);
+    height: 100%;
+    z-index: -7;
+}
+
+.featureCards {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.userAddCardContainer {
+    padding: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.allUserCard {
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imageText3 {
+    background-color: rgba(41, 31, 31, 0.4);
+    border: none;
+    font-size: 1.5rem;
+    width: fit-content;
+    display: none;
+}
+
+.featCardContainer {
+    justify-content: center;
+}
+
+.allAddCards {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+@media screen and (min-width:550px) {
+    .featureCards {
+        border-width: 1px 0 0 1px;
+        border-style: solid;
+        border-color: var(--grey-border);
+        flex-direction: row;
+        width: 75%;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width:770px) {
+    .landingPage {
+        background-attachment: fixed;
+    }
+
+    .imageTextContainer {
+        z-index: 0;
+    }
+
+    .allAddCards {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .imageText3 {
+        display: block;
+    }
+
+    .imageTextContainer {
+        top: 45%;
+    }
+}
+
+@media screen and (min-width:820px) {
+    .allUserCard {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+}
