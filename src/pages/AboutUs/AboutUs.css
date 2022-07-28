@@ -1,0 +1,149 @@
+.aboutUsImg{
+    background-image: url('https://techindustan.com/wp-content/uploads/2021/04/about-us.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    height: 400px;
+}
+
+.backToHome{
+    background-color: var(--footer-color);
+    padding: 3px;
+    width: fit-content;
+    gap: 5px;
+    justify-content: center;
+    border-radius: var(--border-radius);
+}
+
+.rightText{
+    flex-direction: column;
+    gap: 8px;
+}
+
+.aboutUsMain{
+    flex-direction: column;
+    gap: 16px;
+    /* position: relative; */
+    /* border: 1px solid yellow; */
+}
+
+.aboutUsSection{
+    position: relative;
+    /* border: 1px solid green; */
+    /* width: 100%; */
+}
+
+.aboutImgTextContainer{
+    /* border: 1px solid red; */
+    gap: 32px;
+    position: absolute;
+    top: 30rem;
+    color: white;
+    padding: 32px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.aboutBody{
+    text-align: center;
+    padding: 32px;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.aboutImg2section, .aboutImg3Container{
+    position: relative;
+}
+
+.aboutImg2{
+    background-image: url('https://techindustan.com/wp-content/uploads/2016/02/aboutus.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 280px;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.aboutImg2Text{
+    position: absolute;
+    text-align: center;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* padding: 2rem 0 2rem 0; */
+    /* color: rgb(40, 101, 192); */
+}
+.coreValueContainer{
+    padding: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.aboutImg3Text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.aboutImg3{
+    background-image: url('https://techindustan.com/wp-content/uploads/2016/02/pc_screen.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size:contain;
+    height: 350px;
+}
+
+.coreValuesPoints{
+    padding: 0 0 0 4rem;
+}
+
+/* _________________________________________________ */
+
+/* FunFactCard styling */
+/* _________________________________________________ */
+
+.funFactCard{
+    /* border:1px solid red; */
+    text-align: center;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.funFactContainer{
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+}
+
+.funFactCardContainer{
+    flex-direction: column;
+
+}
+
+
+@media screen and (min-width:767px) {
+    .aboutImgTextContainer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .pagePadding{
+        padding-left: 13.5rem;
+        padding-right: 13.5rem;
+    }
+    .funFactCardContainer{
+        flex-direction: row;
+        justify-content:space-between;
+        text-align:justify;
+        flex-wrap: wrap;
+    }
+
+
+}
