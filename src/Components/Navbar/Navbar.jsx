@@ -27,7 +27,7 @@ const Navbar = ({ openDrawer, setOpenDrawer }) => {
         <img
           src="https://techindustan.com/wp-content/uploads/2016/02/tecHindustan_logo-2.png"
           alt="logo"
-          className={scrollNav ? 'hide' : 'logoDesktopImg'}
+          className={scrollNav ? 'hide logoDesktopImg' : 'logoDesktopImg'}
         />
         <section className="navHeader">
           <nav

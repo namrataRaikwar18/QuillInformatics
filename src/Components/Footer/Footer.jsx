@@ -2,8 +2,10 @@ import './Footer.css'
 const Footer = () => {
   return (
     <footer className="footer displayFlex">
-      <h1>Stay Connected!</h1>
-      <p>We will do our best to deliver appealing products.</p>
+      <h2>Stay Connected!</h2>
+      <p className="lightGreyText">
+        We will do our best to deliver appealing products.
+      </p>
       <form className="joinInput displayFlex">
         <input
           type="text"
@@ -12,10 +14,10 @@ const Footer = () => {
         />
         <button className="btn boldText joinBtn">JOIN US</button>
       </form>
-      <h1>We are Global</h1>
+      <h2>We are Global</h2>
       <div className="locations displayFlex">
         <div>
-          <h2 className="">AUSTRALIA</h2>
+          <h3>AUSTRALIA</h3>
           <div className="address lightGreyText">
             <p>
               <small>12 A, Kelsey Street, Kidman Park 5025, SA</small>
@@ -31,9 +33,9 @@ const Footer = () => {
         </div>
 
         <div>
-          <h2>SWEDEN</h2>
+          <h3>SWEDEN</h3>
           <div className="address lightGreyText">
-            Karlstad Innovation Park
+            <small>Karlstad Innovation Park</small> 
             <p>
               <small>Sommargatan 101A</small>
             </p>
@@ -50,7 +52,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h2>USA</h2>
+          <h3>USA</h3>
           <div className="address lightGreyText">
             <p>
               <small>5701, Lonetree Blvd, Suite # 313, Rocklin,</small>
@@ -68,13 +70,13 @@ const Footer = () => {
         </div>
 
         <div>
-          <h2>INDIA</h2>
+          <h3>INDIA</h3>
           <div className="address lightGreyText">
             <p>
-              <small>
-                902, Tower B, Bestech Business Tower Sector 66, Mohali, Punjab
-                160066
-              </small>
+              <small>902, Tower B, Bestech Business</small>
+            </p>
+            <p>
+              <small>Tower Sector 66, Mohali, Punjab  160066</small>
             </p>
             <p>
               <small>Email: hi@techindustan.com</small>
@@ -90,9 +92,11 @@ const Footer = () => {
       </div>
 
       <div className="privacyContainer boldText displayFlex whiteDivider">
-        <span>PRIVACY POLICY</span>
-        <span>SITEMAP</span>
-        <span>CONTACT US</span>
+      <h6 className='policyLine displayFlex'>
+        <p>PRIVACY POLICY </p>
+        <p> SITEMAP </p>
+        <p> CONTACT US </p>
+      </h6>
       </div>
       <div className="policyStartupCont displayFlex">
         <small className="lightGreyText copyRightLine displayFlex">
