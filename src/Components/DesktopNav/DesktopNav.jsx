@@ -3,6 +3,7 @@ import { IoSearch } from 'react-icons/io5'
 import { ImCross } from 'react-icons/im'
 import { useSearchModal } from '../../context/searchModalContext'
 import { SearchModal } from '../index'
+import { Link } from 'react-router-dom'
 
 const DesktopNav = ({ scrollNav, setScrollNav }) => {
   const { searchModal, setSearchModal } = useSearchModal()
@@ -23,36 +24,44 @@ const DesktopNav = ({ scrollNav, setScrollNav }) => {
         scrollNav
           ? 'scrollNav displayflex desktopNav'
           : 'desktopNav displayflex'
-      } 
+      }
     >
       <ul className="desktopLinks displayFlex ">
-      {scrollNav ? <img src="	https://techindustan.com/wp-content/uploads/2017/01/techindustan-logo-sticky.jpg" alt="onScrolldesktopLogo" className='onScrolldesktopLogo logoDesktopImg' /> : null }
-      <div className='allNavLinks displayFlex'>
-        <li className="navLinks">Services</li>
-        <li className="navLinks">About Us</li>
-        <li className="navLinks">Contact Us</li>
         {scrollNav ? (
-          searchModal ? (
-            <div
-              className="navIcons crossIcon displayFlex"
-              onClick={() => setSearchModal(false)}
-            >
-              <ImCross />
-            </div>
-          ) : (
-            <div
-              className="navIcons searchIcon displayFlex"
-              onClick={() => setSearchModal(true)}
-            >
-              <IoSearch />
-            </div>
-          )
+          <img
+            src="	https://techindustan.com/wp-content/uploads/2017/01/techindustan-logo-sticky.jpg"
+            alt="onScrolldesktopLogo"
+            className="onScrolldesktopLogo logoDesktopImg"
+          />
         ) : null}
-      </div>
-      </ul>
-        <div className='desktopSearch'>
-        {searchModal ? <SearchModal scrollNav={scrollNav}/> : null}
+        <div className="allNavLinks displayFlex">
+          <li className="list navLinks">Services</li>
+          <Link to="/about-us" className="link navLinks">
+            <li className="list navLinks">About Us</li>
+          </Link>
+          <li className="list navLinks">Contact Us</li>
+          {scrollNav ? (
+            searchModal ? (
+              <div
+                className="navIcons crossIcon displayFlex"
+                onClick={() => setSearchModal(false)}
+              >
+                <ImCross />
+              </div>
+            ) : (
+              <div
+                className="navIcons searchIcon displayFlex"
+                onClick={() => setSearchModal(true)}
+              >
+                <IoSearch />
+              </div>
+            )
+          ) : null}
         </div>
+      </ul>
+      <div className="desktopSearch">
+        {searchModal ? <SearchModal scrollNav={scrollNav} /> : null}
+      </div>
     </div>
   )
 }

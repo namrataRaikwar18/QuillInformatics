@@ -10,7 +10,6 @@
 }
 
 .drawerList {
-    list-style: none;
     width: 100%;
     padding: 2rem;
     border-bottom: 1px solid var(--grey-border);

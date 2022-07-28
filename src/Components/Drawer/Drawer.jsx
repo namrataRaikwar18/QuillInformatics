@@ -1,5 +1,6 @@
 import './Drawer.css'
 import { MdKeyboardArrowLeft } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 
 const Drawer = ({ setOpenDrawer }) => {
   return (
@@ -12,9 +13,11 @@ const Drawer = ({ setOpenDrawer }) => {
           <MdKeyboardArrowLeft className="backArrowIcon" />
           <p className="back">Back</p>
         </div>
-        <li className="drawerList">Services</li>
-        <li className="drawerList">About Us</li>
-        <li className="drawerList">Contact Us</li>
+        <li className="list drawerList">Services</li>
+        <Link to='/about-us' className='link'>
+        <li className=" list drawerList">About Us</li>
+        </Link> 
+        <li className="list drawerList">Contact Us</li>
       </ul>
     </div>
   )
