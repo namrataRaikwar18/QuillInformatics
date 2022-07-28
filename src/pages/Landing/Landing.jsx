@@ -1,11 +1,9 @@
 import {
   FeatureCard,
   Mothodology,
-  Navbar,
   UserCard,
   Vision,
   Add,
-  Drawer,
 } from '../../Components'
 import './Landing.css'
 import { GoDeviceMobile } from 'react-icons/go'
@@ -17,16 +15,10 @@ import { ReviewPage } from '..'
 import { useState } from 'react'
 
 const Landing = () => {
-  const [openDrawer, setOpenDrawer] = useState(false)
-
   return (
     <>
-      <Navbar openDrawer={openDrawer} setOpenDrawer={setOpenDrawer} />
-      {openDrawer ? (
-        <Drawer openDrawer={openDrawer} setOpenDrawer={setOpenDrawer} />
-      ) : null}
       <div
-        className={openDrawer ? 'hideOverFlow landingPage' : 'landingPage'}
+        className= 'landingPage'
       />
       <div className="imageTextContainer displayFlex">
         <h2 className="imageText imageText1">

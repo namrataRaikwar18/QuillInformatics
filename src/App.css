@@ -28,7 +28,6 @@ body {
     background-color: #FFFFFF;
     font-size: 1.8rem;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    overflow-x: hidden;
 }
 
 .displayFlex {
@@ -114,6 +113,16 @@ body {
     cursor: pointer;
 }
 
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.list{
+    list-style: none;
+}
+
+
 @media screen and (max-width:768px) {
     html {
         font-size: 50%;
@@ -124,5 +133,11 @@ body {
     html {
         font-size: 48%;
     }
-
+    
+}
+@media screen and (min-width:768px) {   
+    .page{
+      padding-left: 12rem;
+      padding-right: 12rem;
+    }
 }
