@@ -10,3 +10,4 @@ export {Drawer} from './Drawer/Drawer';
 export {DesktopNav} from './DesktopNav/DesktopNav';
 export {SearchModal} from './SearchModal/SearchModal';
 export {FunFactCard} from './FunFactCard/FunFactCard';
+export {MapCard} from './MapCard/MapCard';

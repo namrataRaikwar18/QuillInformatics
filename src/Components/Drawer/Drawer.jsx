@@ -14,10 +14,12 @@ const Drawer = ({ setOpenDrawer }) => {
           <p className="back">Back</p>
         </div>
         <li className="list drawerList">Services</li>
-        <Link to='/about-us' className='link'>
-        <li className=" list drawerList">About Us</li>
-        </Link> 
-        <li className="list drawerList">Contact Us</li>
+        <Link to="/about-us" className="link">
+          <li className=" list drawerList">About Us</li>
+        </Link>
+        <Link to="contact-us" className="link">
+          <li className="list drawerList">Contact Us</li>
+        </Link>
       </ul>
     </div>
   )

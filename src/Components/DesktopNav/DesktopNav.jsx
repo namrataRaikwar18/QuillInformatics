@@ -36,10 +36,12 @@ const DesktopNav = ({ scrollNav, setScrollNav }) => {
         ) : null}
         <div className="allNavLinks displayFlex">
           <li className="list navLinks">Services</li>
-          <Link to="/about-us" className="link navLinks">
+          <Link to="/about-us" className="link">
             <li className="list navLinks">About Us</li>
           </Link>
+          <Link to='contact-us' className='link'>
           <li className="list navLinks">Contact Us</li>
+          </Link>
           {scrollNav ? (
             searchModal ? (
               <div

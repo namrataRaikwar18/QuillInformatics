@@ -1,8 +1,8 @@
-import { Route, Routes } from 'react-router';
-import { useState } from 'react';
+import { Route, Routes } from 'react-router'
+import { useState } from 'react'
 import './App.css'
-import { Footer,Navbar, Drawer } from './Components'
-import { AboutUs, Landing } from './pages'
+import { Footer, Navbar, Drawer } from './Components'
+import { AboutUs, ContactUs, Landing } from './pages'
 
 function App() {
   const [openDrawer, setOpenDrawer] = useState(false)
@@ -16,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
       <Footer />
     </div>

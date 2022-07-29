@@ -1,0 +1,17 @@
+.mapCard {
+    width: 35rem;
+    top: 20%;
+    left: 10%;
+    position: absolute;
+    box-shadow: 1px 2px 4px 1px var(--bg-greyShade);
+    background-color: white;
+    border-radius: var(--border-radius);
+}
+
+.mapCardImg {
+    width: 35rem;
+}
+
+.mapImgText {
+    padding: 3rem;
+}

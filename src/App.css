@@ -105,21 +105,22 @@ body {
     font-weight: bold;
 }
 
+.navLinks,
 .navIcons {
     cursor: pointer;
 }
 
-.navLinks {
-    cursor: pointer;
-}
-
-.link{
+.link {
     text-decoration: none;
     color: inherit;
 }
 
-.list{
+.list {
     list-style: none;
+}
+
+textarea {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
@@ -133,11 +134,12 @@ body {
     html {
         font-size: 48%;
     }
-    
+
 }
-@media screen and (min-width:768px) {   
-    .page{
-      padding-left: 12rem;
-      padding-right: 12rem;
+
+@media screen and (min-width:768px) {
+    .page {
+        padding-left: 12rem;
+        padding-right: 12rem;
     }
 }
