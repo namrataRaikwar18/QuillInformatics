@@ -1,4 +1,4 @@
-.aboutUsImg{
+.aboutUsImg {
     background-image: url('https://techindustan.com/wp-content/uploads/2021/04/about-us.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,7 +7,7 @@
     height: 400px;
 }
 
-.backToHome{
+.backToHome {
     background-color: var(--footer-color);
     padding: 3px;
     width: fit-content;
@@ -16,27 +16,22 @@
     border-radius: var(--border-radius);
 }
 
-.rightText{
+.rightText {
     flex-direction: column;
-    gap: 8px;
+    gap: 5px;
 }
 
-.aboutUsMain{
+.aboutUsMain {
     flex-direction: column;
     gap: 16px;
-    /* position: relative; */
-    /* border: 1px solid yellow; */
 }
 
-.aboutUsSection{
+.aboutUsSection {
     position: relative;
-    /* border: 1px solid green; */
-    /* width: 100%; */
 }
 
-.aboutImgTextContainer{
-    /* border: 1px solid red; */
-    gap: 32px;
+.aboutImgTextContainer {
+    gap: 1.5rem;
     position: absolute;
     top: 30rem;
     color: white;
@@ -45,18 +40,19 @@
     flex-direction: column;
 }
 
-.aboutBody{
+.aboutBody {
     text-align: center;
     padding: 32px;
     flex-direction: column;
     gap: 32px;
 }
 
-.aboutImg2section, .aboutImg3Container{
+.aboutImg2section,
+.aboutImg3Container {
     position: relative;
 }
 
-.aboutImg2{
+.aboutImg2 {
     background-image: url('https://techindustan.com/wp-content/uploads/2016/02/aboutus.jpg');
     background-size: cover;
     background-position: center center;
@@ -66,22 +62,21 @@
     border-bottom: 4px solid var(--primary-color);
 }
 
-.aboutImg2Text{
+.aboutImg2Text {
     position: absolute;
     text-align: center;
-    top:50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    /* padding: 2rem 0 2rem 0; */
-    /* color: rgb(40, 101, 192); */
+    transform: translate(-50%, -50%);
 }
-.coreValueContainer{
+
+.coreValueContainer {
     padding: 2rem;
     flex-direction: column;
     gap: 2rem;
 }
 
-.aboutImg3Text{
+.aboutImg3Text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -89,16 +84,16 @@
     border-bottom: 4px solid var(--primary-color);
 }
 
-.aboutImg3{
+.aboutImg3 {
     background-image: url('https://techindustan.com/wp-content/uploads/2016/02/pc_screen.png');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
-    background-size:contain;
+    background-size: contain;
     height: 350px;
 }
 
-.coreValuesPoints{
+.coreValuesPoints {
     padding: 0 0 0 4rem;
 }
 
@@ -107,43 +102,46 @@
 /* FunFactCard styling */
 /* _________________________________________________ */
 
-.funFactCard{
-    /* border:1px solid red; */
+.funFactCard {
     text-align: center;
     flex-direction: column;
-    /* align-items: center; */
     padding: 2rem;
     gap: 1rem;
 }
 
-.funFactContainer{
+.funFactContainer {
     flex-direction: column;
     text-align: center;
     gap: 2rem;
 }
 
-.funFactCardContainer{
+.funFactCardContainer {
     flex-direction: column;
 
 }
 
 
 @media screen and (min-width:767px) {
-    .aboutImgTextContainer{
+    .aboutImgTextContainer {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .pagePadding{
+    .pagePadding {
         padding-left: 13.5rem;
         padding-right: 13.5rem;
     }
-    .funFactCardContainer{
+
+    .funFactCardContainer {
         flex-direction: row;
-        justify-content:space-between;
-        text-align:justify;
+        justify-content: space-between;
+        text-align: justify;
         flex-wrap: wrap;
     }
 
+    .rightText {
+        position: relative;
+        bottom: 5rem;
+    }
 
 }

@@ -10,7 +10,6 @@ import { FunFactCard } from '../../Components'
 const AboutUs = () => {
   return (
     <>
-      {/* <Navbar /> */}
       <main className="aboutUsMain displayFlex">
         <section className="aboutUsSection">
           <div className="aboutUsImg" />
