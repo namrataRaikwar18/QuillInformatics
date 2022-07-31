@@ -2,11 +2,13 @@ import './DesktopNav.css'
 import { IoSearch } from 'react-icons/io5'
 import { ImCross } from 'react-icons/im'
 import { useSearchModal } from '../../context/searchModalContext'
-import { SearchModal } from '../index'
+import { SearchModal, Popover } from '../index'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 const DesktopNav = ({ scrollNav, setScrollNav }) => {
   const { searchModal, setSearchModal } = useSearchModal()
+  const [popover, setPopover] = useState(false)
 
   const scrollHandler = () => {
     if (window.scrollY > 10) {
@@ -35,7 +37,11 @@ const DesktopNav = ({ scrollNav, setScrollNav }) => {
           />
         ) : null}
         <div className="allNavLinks displayFlex">
-          <li className="list navLinks">Services</li>
+        <div className=' servicePopover'>
+          <li className="list navLinks services" onMouseLeave={() => setPopover(false)} onMouseEnter={() => setPopover(true)}>Services
+          </li>
+          {popover ? <Popover scrollNav={scrollNav}/> : null}
+        </div>
           <Link to="/about-us" className="link">
             <li className="list navLinks">About Us</li>
           </Link>
@@ -59,11 +65,15 @@ const DesktopNav = ({ scrollNav, setScrollNav }) => {
               </div>
             )
           ) : null}
-        </div>
+     </div>
       </ul>
+      
+
+      {/* {popover ? <Popover scrollNav={scrollNav}/> : null} */}
       <div className="desktopSearch">
         {searchModal ? <SearchModal scrollNav={scrollNav} /> : null}
       </div>
+     
     </div>
   )
 }

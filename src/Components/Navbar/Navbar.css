@@ -24,7 +24,7 @@
 }
 
 .crossIcon {
-    background-color: white;
+    background-color: var(--modal-bgColor);
     color: black;
 }
 
@@ -81,15 +81,15 @@
         font-size: 1.5rem;
         align-items: center;
     }
-    
+
     .hamburgerNav {
         display: none;
     }
-    
+
     .hide {
         display: none;
-    }   
-    
+    }
+
     .logoDesktopImg {
         display: block;
     }

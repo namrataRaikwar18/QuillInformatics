@@ -6,7 +6,7 @@
 
 .searchModal {
     position: absolute;
-    background-color: white;
+    background-color: var(--modal-bgColor);
     right: 0;
     z-index: 10;
     top: 10%;
@@ -18,12 +18,13 @@
     outline: none;
     border: none;
     border-bottom: 1px solid var(--grey-border);
+    background-color: transparent;
 }
 
 @media screen and (min-width:770px) {
     .onScrollSerchModal{
         position: absolute;
-        background-color: white;
+        background-color: var(--modal-bgColor);
         right: 5%;
         z-index: 10;
         top: 80%;

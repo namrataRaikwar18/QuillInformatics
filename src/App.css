@@ -13,6 +13,8 @@
     --darkblue-color: #34495e;
     --footer-color: #161515;
     --nav-bg: #333;
+    --modal-bgColor:#f4f4f4;
+    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 html {

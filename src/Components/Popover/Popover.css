@@ -1,0 +1,34 @@
+.popover {
+    background-color: var(--modal-bgColor);
+    color: black;
+    padding: 1.5rem;
+    position: relative;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    pointer-events: visible;
+}
+
+.normalNav {
+    position: absolute;
+    right: 12rem;
+    bottom: -8%;
+}
+
+.stickyNavPopover {
+    position: absolute;
+    right: 17.5rem;
+    top: 100%;
+}
+
+.popover::before {
+    content: "";
+    border: 12px solid transparent;
+    position: absolute;
+    top: -18%;
+    left: 5%;
+    border-bottom-color: var(--modal-bgColor);
+}
+
+.category {
+    box-sizing: border-box;
+}
