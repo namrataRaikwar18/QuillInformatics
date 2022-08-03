@@ -1,0 +1,57 @@
+.mobileDevImg {
+  background-image: url("https://techindustan.com/wp-content/uploads/2016/02/Mobile_App_devlopment1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll;
+  height: 400px;
+  background-repeat: no-repeat;
+  filter: brightness(0.7);
+}
+
+.mobileDevBody {
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.mobileDevIcon {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  color: var(--primary-color);
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.1s ease-in-out;
+  border: 2px solid var(--primary-color);
+  position: relative;
+  z-index: 1;
+}
+
+.mobileIcon {
+  position: absolute;
+}
+.mobileDevIcon:hover {
+  border-width: 40px;
+  color: white;
+}
+
+.mobileDevContainer {
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobileDevPara {
+  text-align: center;
+}
+
+@media screen and (min-width: 767px) {
+  .mobileDevContainer {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .mobileDevPara {
+    text-align: start;
+  }
+}

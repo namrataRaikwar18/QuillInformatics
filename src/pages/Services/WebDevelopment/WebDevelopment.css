@@ -1,0 +1,33 @@
+.webDevelopmentImg {
+  background-image: url("https://techindustan.com/wp-content/uploads/2016/02/e_commerce_devlopment.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  height: 350px;
+  filter: brightness(0.7);
+}
+
+.webDevBody,
+.webDevHeader {
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.projectToolContainer {
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 767px) {
+  .pagePadding {
+    padding-left: 13.5rem;
+    padding-right: 13.5rem;
+  }
+
+  .projectToolContainer {
+    flex-direction: row;
+  }
+}
