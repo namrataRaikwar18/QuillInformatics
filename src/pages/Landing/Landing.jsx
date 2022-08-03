@@ -100,7 +100,11 @@ const Landing = () => {
             heading="Q&A"
           />
         </div>
-        <div className="allAddCards displayFlex">
+      {/* _____________________ */}
+        {/* Blog */}
+      {/* _____________________ */}
+
+        {/* <div className="allAddCards displayFlex">
           <Add
             detail=" 02 May 2022 By tecHindustan Solutions in"
             tech="SEO, Social Media"
@@ -119,7 +123,8 @@ const Landing = () => {
             addImg="https://techindustan.com/wp-content/uploads/2022/03/Image2-1-370x200.jpg"
             addHead="What Is Web 3? Is it The Future Of the Internet?"
           />
-        </div>
+        </div> */}
+
       </section>
     </>
   )

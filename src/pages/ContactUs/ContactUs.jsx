@@ -1,24 +1,14 @@
-import './ContactUs.css'
-import { Link } from 'react-router-dom'
-import { IoMdArrowDropright } from 'react-icons/io'
-import { MapCard } from '../../Components'
+import "./ContactUs.css";
+import { BackToHome, MapCard } from "../../Components";
 
 const ContactUs = () => {
   return (
     <main>
-      <section className="contactUsSection">
+      <section className="pageSection">
         <div className="contactUsImg" />
-        <ul className="contactUsImgText backToHome displayFlex whiteText">
-          <Link to="/" className="link">
-            <li className="list">
-              <small>HOME</small>
-            </li>
-          </Link>
-          <IoMdArrowDropright className="primaryColorText" />
-          <li className="list">
-            <small>ABOUT US</small>
-          </li>
-        </ul>
+        <div className="imgText  pagePadding">
+          <BackToHome page="CONTACT US" />
+        </div>
       </section>
       <div className="contactBody pagePadding whiteText displayFlex">
         <p className="bigText">
@@ -125,7 +115,7 @@ const ContactUs = () => {
                 <strong>Sales Enquiry:</strong> +918570910001
               </p>
             </div>
-            <div>   
+            <div>
               <strong>Australia Office:</strong>
               <p>5A South Road, Airport West, VIC, 3042</p>
               <strong>Email</strong>
@@ -137,12 +127,18 @@ const ContactUs = () => {
           </small>
         </aside>
       </section>
-      <section className='mapSection'> 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502071.21504911!2d73.15677666248847!3d30.998616419386163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391964aa569e7355%3A0x8fbd263103a38861!2sPunjab!5e0!3m2!1sen!2sin!4v1659014280606!5m2!1sen!2sin" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='locationMap'></iframe>
-      <MapCard />
+      <section className="mapSection">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502071.21504911!2d73.15677666248847!3d30.998616419386163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391964aa569e7355%3A0x8fbd263103a38861!2sPunjab!5e0!3m2!1sen!2sin!4v1659014280606!5m2!1sen!2sin"
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="locationMap"
+        ></iframe>
+        <MapCard />
       </section>
     </main>
-  )
-}
+  );
+};
 
-export { ContactUs }
+export { ContactUs };

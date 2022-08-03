@@ -1,100 +1,89 @@
 .aboutUsImg {
-    background-image: url('https://techindustan.com/wp-content/uploads/2021/04/about-us.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    height: 400px;
-}
-
-.backToHome {
-    background-color: var(--footer-color);
-    padding: 3px;
-    width: fit-content;
-    gap: 5px;
-    justify-content: center;
-    border-radius: var(--border-radius);
+  background-image: url("https://techindustan.com/wp-content/uploads/2021/04/about-us.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  height: 400px;
 }
 
 .rightText {
-    flex-direction: column;
-    gap: 5px;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .aboutUsMain {
-    flex-direction: column;
-    gap: 16px;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .aboutUsSection {
-    position: relative;
+  position: relative;
 }
 
 .aboutImgTextContainer {
-    gap: 1.5rem;
-    position: absolute;
-    top: 30rem;
-    color: white;
-    padding: 32px;
-    width: 100%;
-    flex-direction: column;
+  gap: 1.5rem;
+  color: white;
+  padding: 1.8rem;
+  width: 100%;
+  flex-direction: column;
 }
 
 .aboutBody {
-    text-align: center;
-    padding: 32px;
-    flex-direction: column;
-    gap: 32px;
+  text-align: center;
+  padding: 32px;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .aboutImg2section,
 .aboutImg3Container {
-    position: relative;
+  position: relative;
 }
 
 .aboutImg2 {
-    background-image: url('https://techindustan.com/wp-content/uploads/2016/02/aboutus.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    height: 280px;
-    border-bottom: 4px solid var(--primary-color);
+  background-image: url("https://techindustan.com/wp-content/uploads/2016/02/aboutus.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 280px;
+  border-bottom: 4px solid var(--primary-color);
 }
 
 .aboutImg2Text {
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .coreValueContainer {
-    padding: 2rem;
-    flex-direction: column;
-    gap: 2rem;
+  padding: 2rem;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .aboutImg3Text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-bottom: 4px solid var(--primary-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom: 4px solid var(--primary-color);
 }
 
 .aboutImg3 {
-    background-image: url('https://techindustan.com/wp-content/uploads/2016/02/pc_screen.png');
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: contain;
-    height: 350px;
+  background-image: url("https://techindustan.com/wp-content/uploads/2016/02/pc_screen.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: contain;
+  height: 350px;
 }
 
 .coreValuesPoints {
-    padding: 0 0 0 4rem;
+  padding: 0 0 0 4rem;
 }
 
 /* _________________________________________________ */
@@ -103,45 +92,42 @@
 /* _________________________________________________ */
 
 .funFactCard {
-    text-align: center;
-    flex-direction: column;
-    padding: 2rem;
-    gap: 1rem;
+  text-align: center;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
 }
 
 .funFactContainer {
-    flex-direction: column;
-    text-align: center;
-    gap: 2rem;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
 }
 
 .funFactCardContainer {
-    flex-direction: column;
-
+  flex-direction: column;
 }
 
+@media screen and (min-width: 767px) {
+  .aboutImgTextContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-@media screen and (min-width:767px) {
-    .aboutImgTextContainer {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  .pagePadding {
+    padding-left: 13.5rem;
+    padding-right: 13.5rem;
+  }
 
-    .pagePadding {
-        padding-left: 13.5rem;
-        padding-right: 13.5rem;
-    }
+  .funFactCardContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: justify;
+    flex-wrap: wrap;
+  }
 
-    .funFactCardContainer {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: justify;
-        flex-wrap: wrap;
-    }
-
-    .rightText {
-        position: relative;
-        bottom: 5rem;
-    }
-
+  .rightText {
+    position: relative;
+    bottom: 5rem;
+  }
 }
