@@ -1,31 +1,31 @@
-import './DesktopNav.css'
-import { IoSearch } from 'react-icons/io5'
-import { ImCross } from 'react-icons/im'
-import { useSearchModal } from '../../context/searchModalContext'
-import { SearchModal, Popover } from '../index'
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import "./DesktopNav.css";
+import { IoSearch } from "react-icons/io5";
+import { ImCross } from "react-icons/im";
+import { useSearchModal } from "../../context/searchModalContext";
+import { SearchModal, Popover } from "../index";
+import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
 
 const DesktopNav = ({ scrollNav, setScrollNav }) => {
-  const { searchModal, setSearchModal } = useSearchModal()
-  const [popover, setPopover] = useState(false)
+  const { searchModal, setSearchModal } = useSearchModal();
+  const [popover, setPopover] = useState(false);
 
   const scrollHandler = () => {
     if (window.scrollY > 10) {
-      setScrollNav(true)
+      setScrollNav(true);
     } else {
-      setScrollNav(false)
+      setScrollNav(false);
     }
-  }
+  };
 
-  window.addEventListener('scroll', scrollHandler)
+  window.addEventListener("scroll", scrollHandler);
 
   return (
     <div
       className={
         scrollNav
-          ? 'scrollNav displayflex desktopNav'
-          : 'desktopNav displayflex'
+          ? "scrollNav displayflex desktopNav"
+          : "desktopNav displayflex"
       }
     >
       <ul className="desktopLinks displayFlex ">
@@ -37,17 +37,35 @@ const DesktopNav = ({ scrollNav, setScrollNav }) => {
           />
         ) : null}
         <div className="allNavLinks displayFlex">
-        <div className=' servicePopover'>
-          <li className="list navLinks services" onMouseLeave={() => setPopover(false)} onMouseEnter={() => setPopover(true)}>Services
-          </li>
-          {popover ? <Popover scrollNav={scrollNav}/> : null}
-        </div>
-          <Link to="/about-us" className="link">
+          <div className=" servicePopover">
+            <li
+              className="list navLinks services"
+              onMouseLeave={() => setPopover(false)}
+              onMouseEnter={() => setPopover(true)}
+            >
+              Services
+              {popover ? (
+                <Popover
+                  scrollNav={scrollNav}
+                  popover={popover}
+                  setPopover={setPopover}
+                />
+              ) : null}
+              <div></div>
+            </li>
+          </div>
+          <NavLink
+            to="/about-us"
+            className={`link ${(isActive) => (isActive ? "active" : "")}`}
+          >
             <li className="list navLinks">About Us</li>
-          </Link>
-          <Link to='contact-us' className='link'>
-          <li className="list navLinks">Contact Us</li>
-          </Link>
+          </NavLink>
+          <NavLink
+            to="/contact-us"
+            className={`link ${(isActive) => (isActive ? "active" : "")}`}
+          >
+            <li className="list navLinks">Contact Us</li>
+          </NavLink>
           {scrollNav ? (
             searchModal ? (
               <div
@@ -65,17 +83,14 @@ const DesktopNav = ({ scrollNav, setScrollNav }) => {
               </div>
             )
           ) : null}
-     </div>
+        </div>
       </ul>
-      
 
-      {/* {popover ? <Popover scrollNav={scrollNav}/> : null} */}
       <div className="desktopSearch">
         {searchModal ? <SearchModal scrollNav={scrollNav} /> : null}
       </div>
-     
     </div>
-  )
-}
+  );
+};
 
-export { DesktopNav }
+export { DesktopNav };

@@ -1,34 +1,54 @@
-.popover {
-    background-color: var(--modal-bgColor);
-    color: black;
-    padding: 1.5rem;
-    position: relative;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    pointer-events: visible;
+.popover,
+.subcategory {
+  background-color: var(--modal-bgColor);
+  color: black;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  position: relative;
+  width: max-content;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
 }
 
-.normalNav {
-    position: absolute;
-    right: 12rem;
-    bottom: -8%;
-}
-
+.normalNav,
 .stickyNavPopover {
-    position: absolute;
-    right: 17.5rem;
-    top: 100%;
+  position: absolute;
+  top: 120%;
 }
 
 .popover::before {
-    content: "";
-    border: 12px solid transparent;
-    position: absolute;
-    top: -18%;
-    left: 5%;
-    border-bottom-color: var(--modal-bgColor);
+  content: "";
+  border: 12px solid transparent;
+  position: absolute;
+  top: -9.5%;
+  left: 5%;
+  border-bottom-color: var(--modal-bgColor);
 }
 
-.category {
-    box-sizing: border-box;
+.category,
+.subcategoryList {
+  box-sizing: border-box;
+  position: relative;
+  padding: 1rem 1rem 1rem 1.5rem;
+  border-bottom: 1px solid var(--grey-border);
+}
+
+.category:hover,
+.subcategoryList:hover {
+  background-color: #e5e7eb;
+}
+
+.categoryList {
+  flex-direction: column;
+}
+
+/* __________________________________________ */
+/* subcategory styling*/
+/* ___________________________________________ */
+
+.subcategory {
+  position: absolute;
+  right: -63%;
+  top: 0;
 }

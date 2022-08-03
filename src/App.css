@@ -125,6 +125,20 @@ textarea {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.pageSection{
+    position: relative;
+}
+
+.imgText{
+    position: absolute;
+    top: 35rem;
+    padding: 1.8rem;
+
+}
+
+.centerText{
+    text-align: center;
+}
 
 @media screen and (max-width:768px) {
     html {
@@ -143,5 +157,9 @@ textarea {
     .page {
         padding-left: 12rem;
         padding-right: 12rem;
+    }
+
+    .imgText{
+        top: 25rem;
     }
 }
