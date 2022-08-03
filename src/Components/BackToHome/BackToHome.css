@@ -1,0 +1,9 @@
+.backToHome {
+  background-color: var(--footer-color);
+  padding: 3px;
+  width: fit-content;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius);
+}
