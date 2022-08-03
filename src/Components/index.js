@@ -12,3 +12,5 @@ export {SearchModal} from './SearchModal/SearchModal';
 export {FunFactCard} from './FunFactCard/FunFactCard';
 export {MapCard} from './MapCard/MapCard';
 export {Popover} from './Popover/Popover';
+export {Subcategory} from './Subcategory/Subcategory';
+export {BackToHome} from './BackToHome/BackToHome';
