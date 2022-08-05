@@ -1,0 +1,82 @@
+.ecomDevImg {
+  background-image: url("https://techindustan.com/wp-content/uploads/2016/02/e_commerce_devlopment.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 400px;
+  filter: brightness(0.7);
+}
+
+.ecomBody {
+  padding: 2rem;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.blackBox {
+  border-width: 1px 0 0 1px;
+  border-style: solid;
+  border-color: var(--grey-border);
+  flex-direction: column;
+  border-radius: var(--border-radius);
+  width: 38rem;
+}
+.eachBlackBox {
+  justify-content: space-between;
+  align-items: center;
+  border-width: 0 1px 1px 0;
+  border-style: solid;
+  border-color: var(--grey-border);
+  padding: 1.2rem;
+}
+
+.blackBoxIcon {
+  font-size: 2rem;
+}
+
+.planningDiv {
+  border: 1px solid var(--grey-border);
+  padding: 2rem;
+  text-align: start;
+  align-items: center;
+}
+
+.buldImg {
+  border-bottom: 1px solid var(--grey-border);
+}
+
+.blackBoxContainer {
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.eachBlackBox:hover {
+  color: var(--primary-color);
+}
+
+@media screen and (min-width: 767px) {
+  .blackBoxContainer {
+    flex-direction: row;
+    border: 1px solid var(--grey-border);
+    align-items: flex-start;
+  }
+
+  .blackBox {
+    width: 50rem;
+  }
+
+  .eachBlackBox:nth-child(1) {
+    border-right: 0;
+  }
+
+  .eachBlackBox:nth-last-child(1) {
+    border-bottom: 0;
+  }
+
+  .planningDiv,
+  .blackBox {
+    border: none;
+  }
+}
