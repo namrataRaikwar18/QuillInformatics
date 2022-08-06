@@ -1,6 +1,5 @@
 import { BackToHome } from "../../../../Components";
 import { FaStarOfLife } from "react-icons/fa";
-import "./JoomlaDev.css";
 
 const JoomlaDev = () => {
   const moodleDevService = [
