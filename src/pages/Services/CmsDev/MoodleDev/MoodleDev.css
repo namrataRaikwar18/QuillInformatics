@@ -1,0 +1,11 @@
+.currentDate {
+  opacity: 0.7;
+  background-color: white;
+  width: fit-content;
+  padding: 0.2rem;
+}
+
+.dataAndBackToHome {
+  flex-direction: column;
+  gap: 2rem;
+}
