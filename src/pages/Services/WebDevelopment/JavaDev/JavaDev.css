@@ -1,0 +1,35 @@
+.javaDevImg {
+  background-image: url("https://techindustan.com/wp-content/uploads/2016/02/java.jpg");
+  background-position: left top;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 350px;
+  filter: brightness(0.7);
+}
+
+.javaService:nth-child(even) {
+  color: var(--java-color);
+}
+
+.javaService:nth-child(odd) {
+  color: var(--primary-color);
+}
+
+.javaServices {
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.javaService {
+  background-color: var(--grey-border);
+  padding: 1rem;
+  border: var(--border-radius);
+  width: fit-content;
+}
+
+.javaOfferContainer {
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}

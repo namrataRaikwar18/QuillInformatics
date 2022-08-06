@@ -1,0 +1,50 @@
+.rorDevImg {
+  background-image: url("https://techindustan.com/wp-content/uploads/2016/02/ruby_01.jpg");
+  background-position: left top;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 350px;
+  filter: brightness(0.6);
+}
+
+.rorDevBgImg {
+  background-image: url("https://techindustan.com/wp-content/uploads/2016/03/ruby_bg.jpg");
+  background-position: left top;
+  background-attachment: scroll;
+  height: 670px;
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+.pageServiceContainer {
+  position: relative;
+}
+
+.pageService {
+  position: absolute;
+  padding: 2rem;
+  gap: 4rem;
+  top: 0;
+  flex-direction: column;
+}
+
+.serviceContainer {
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.rightServiceDiv {
+  text-align: end;
+}
+
+@media screen and (min-width: 767px) {
+  .pageService {
+    flex-direction: row;
+    top: 10%;
+    align-items: center;
+  }
+
+  .rorDevBgImg {
+    height: 600px;
+  }
+}

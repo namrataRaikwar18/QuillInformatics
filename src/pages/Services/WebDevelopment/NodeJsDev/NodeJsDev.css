@@ -1,0 +1,16 @@
+.nodeJsHeader {
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.nodeDevHeading {
+  color: white;
+}
+
+@media screen and (min-width: 767px) {
+  .nodeJsHeader {
+    flex-direction: row;
+  }
+}

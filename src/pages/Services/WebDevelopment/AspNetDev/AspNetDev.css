@@ -1,0 +1,81 @@
+.aspNetDevImg {
+  background-image: url("https://techindustan.com/wp-content/uploads/2016/02/asp_net-1.jpg");
+  background-position: left top;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 350px;
+  background-repeat: no-repeat;
+  filter: brightness(0.7);
+}
+
+.aspFeatureBgImg {
+  background-image: url("https://techindustan.com/wp-content/uploads/2016/02/asp_bg.jpg");
+  background-position: left top;
+  background-size: auto;
+  background-attachment: scroll;
+  height: 1250px;
+  background-repeat: repeat;
+}
+
+.aspNetBody {
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.aspNetCard {
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.aspFeatureContainer {
+  position: relative;
+}
+
+.aspBgImgText {
+  position: absolute;
+  top: 0;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.rightFeatContainer {
+  text-align: end;
+}
+
+.featureContainer {
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.eachAspFeat {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.eachAspFeat:hover .aspFeatIcon {
+  color: var(--primary-color);
+}
+
+.aspFeatIcon {
+  font-size: 4rem;
+}
+
+@media screen and (min-width: 767px) {
+  .aspBgImgText {
+    top: 5%;
+    flex-direction: row;
+  }
+
+  .aspFeatureBgImg {
+    height: 65rem;
+    background-repeat: repeat;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .aspNetBody {
+    flex-direction: row;
+    align-items: center;
+  }
+}

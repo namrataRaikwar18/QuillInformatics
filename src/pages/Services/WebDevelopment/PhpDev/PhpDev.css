@@ -1,0 +1,37 @@
+.phpDevImg {
+  background-image: url("https://techindustan.com/wp-content/uploads/2016/02/php.jpg");
+  background-position: left top;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 350px;
+  filter: brightness(0.7);
+}
+
+.phpDevBody {
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.phpCards,
+.whyPhpBody {
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.whyPhpCard {
+  flex-direction: column;
+}
+
+.phpTechCard {
+  flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 767px) {
+  .whyPhpCard {
+    flex-direction: row;
+  }
+  .phpTechCard {
+    flex-direction: row-reverse;
+  }
+}

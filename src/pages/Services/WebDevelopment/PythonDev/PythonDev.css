@@ -1,0 +1,18 @@
+.pythonDevImg {
+  background-image: url("https://techindustan.com/wp-content/uploads/2016/02/python.jpg");
+  background-position: left top;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 350px;
+  filter: brightness(0.7);
+}
+
+.pythonBody {
+  flex-direction: column;
+}
+
+@media screen and (min-width: 767px) {
+  .pythonCard {
+    flex-direction: row;
+  }
+}
