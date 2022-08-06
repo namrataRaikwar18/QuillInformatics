@@ -1,0 +1,109 @@
+.UXdesignImg {
+  background-image: url("https://techindustan.com/wp-content/uploads/2016/02/ux_01.jpg");
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+
+.uxDesignBody {
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.treeStructure {
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  position: relative;
+}
+
+.treeStructure::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: var(--grey-border);
+  left: 50%;
+  z-index: 0;
+}
+
+.mechanismContainer {
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.eachMachanism {
+  flex-direction: column;
+  background-color: white;
+  border-radius: var(--border-radius);
+  z-index: 4;
+  padding: 2rem;
+  box-shadow: 0 0 3px 0 var(--grey-border);
+  gap: 1rem;
+  position: relative;
+  text-align: start;
+}
+
+.treeTitle {
+  background-color: white;
+  z-index: 7;
+  position: relative;
+}
+
+.machanismIcon {
+  color: white;
+}
+
+.calenderIcon {
+  width: 20px;
+  top: -10%;
+  left: 50%;
+  border-radius: 50%;
+  position: absolute;
+  height: 20px;
+  display: none;
+  padding: 2rem;
+  background-color: var(--primary-color);
+}
+
+.machanismIcon {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 767px) {
+  .eachMachanism:nth-child(even) {
+    margin-right: 50%;
+    padding-right: 5rem;
+  }
+
+  .eachMachanism:nth-child(odd) {
+    margin-left: 50%;
+    padding-left: 5rem;
+  }
+
+  .calenderIcon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    background-color: var(--primary-color);
+  }
+
+  .eachMachanism {
+    position: relative;
+    background-color: transparent;
+  }
+
+  .eachMachanism:nth-child(odd) .calenderIcon {
+    left: -2rem;
+  }
+
+  .eachMachanism:nth-child(even) .calenderIcon {
+    left: 96.5%;
+  }
+}
