@@ -13,7 +13,7 @@ const HtmlDev = () => {
   return (
     <main>
       <section className="pageSection">
-        <div className="cmsDevImg" />
+        <div className="cmsDevImg pageHeaderImg" />
         <div className="imgText pagePadding displayFlex nodeJsHeader">
           <BackToHome page="HTML5 CANVAS DEVELOPMENT" />
           <div className="nodeDevHeading displayFlex">

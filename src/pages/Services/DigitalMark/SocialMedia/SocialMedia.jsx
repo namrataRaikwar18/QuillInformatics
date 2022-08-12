@@ -14,7 +14,7 @@ const SocialMedia = () => {
   return (
     <main>
       <section className="pageSection">
-        <div className="cmsDevImg" />
+        <div className="cmsDevImg cmsDevImg" />
         <div className="imgText pagePadding displayFlex nodeJsHeader">
           <div className="displayFlex dataAndBackToHome">
             <BackToHome page="SOCIAL MEDIA MARKETING" />

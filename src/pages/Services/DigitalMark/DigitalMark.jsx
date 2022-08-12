@@ -4,7 +4,7 @@ const DigitalMark = () => {
   return (
     <main>
       <section className="pageSection">
-        <div className="cmsDevImg" />
+        <div className="cmsDevImg cmsDevImg" />
         <div className="imgText pagePadding">
           <BackToHome page="DIGITAL MARKETING" />
         </div>
