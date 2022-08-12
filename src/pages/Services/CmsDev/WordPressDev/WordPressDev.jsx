@@ -1,4 +1,3 @@
-import "./WordPressDev.css";
 import { FaWordpressSimple } from "react-icons/fa";
 import { BackToHome } from "../../../../Components";
 
@@ -11,7 +10,7 @@ const WordPressDev = () => {
   return (
     <main>
       <section className="pageSection">
-        <div className="wordPressImgDevImg" />
+        <div className="wordPressImgDevImg pageHeaderImg" />
         <div className="imgText pagePadding">
           <BackToHome page="WORDPRESS DEVELOPMENT" />
         </div>

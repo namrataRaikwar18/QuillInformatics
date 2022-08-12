@@ -62,7 +62,7 @@ const SocialMedia = () => {
             <p>Social Media Marketing benefits in many ways:</p>
             <ul>
               {contentDevList.map((list) => (
-                <li>{list}</li>
+                <li key={list}>{list}</li>
               ))}
             </ul>
           </div>

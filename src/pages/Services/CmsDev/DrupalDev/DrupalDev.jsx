@@ -1,4 +1,3 @@
-import "./DrupalDev.css";
 import { BsFillDropletFill } from "react-icons/bs";
 import { BackToHome } from "../../../../Components";
 
@@ -12,7 +11,7 @@ const DrupalDev = () => {
   return (
     <main>
       <section className="pageSection">
-        <div className="drupalDevImg" />
+        <div className="drupalDevImg pageHeaderImg" />
         <div className="imgText pagePadding">
           <BackToHome page="DRUPAL DEVELOPMENT" />
         </div>

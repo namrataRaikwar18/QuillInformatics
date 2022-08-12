@@ -1,25 +1,16 @@
-import {
-  FeatureCard,
-  Mothodology,
-  UserCard,
-  Vision,
-  Add,
-} from '../../Components'
-import './Landing.css'
-import { GoDeviceMobile } from 'react-icons/go'
-import { HiOutlineShoppingCart, HiWifi } from 'react-icons/hi'
-import { RiComputerLine } from 'react-icons/ri'
-import { MdOutlinePhotoSizeSelectActual } from 'react-icons/md'
-import { BsTag } from 'react-icons/bs'
-import { ReviewPage } from '..'
-import { useState } from 'react'
+import { FeatureCard, Mothodology, UserCard, Vision } from "../../Components";
+import "./Landing.css";
+import { GoDeviceMobile } from "react-icons/go";
+import { HiOutlineShoppingCart, HiWifi } from "react-icons/hi";
+import { RiComputerLine } from "react-icons/ri";
+import { MdOutlinePhotoSizeSelectActual } from "react-icons/md";
+import { BsTag } from "react-icons/bs";
+import { ReviewPage } from "..";
 
 const Landing = () => {
   return (
     <>
-      <div
-        className= 'landingPage'
-      />
+      <div className="landingPage" />
       <div className="imageTextContainer displayFlex">
         <h2 className="imageText imageText1">
           <p>Crafting Ultimate Products to</p>
@@ -100,9 +91,9 @@ const Landing = () => {
             heading="Q&A"
           />
         </div>
-      {/* _____________________ */}
+        {/* _____________________ */}
         {/* Blog */}
-      {/* _____________________ */}
+        {/* _____________________ */}
 
         {/* <div className="allAddCards displayFlex">
           <Add
@@ -124,10 +115,9 @@ const Landing = () => {
             addHead="What Is Web 3? Is it The Future Of the Internet?"
           />
         </div> */}
-
       </section>
     </>
-  )
-}
+  );
+};
 
-export { Landing }
+export { Landing };

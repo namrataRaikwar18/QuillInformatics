@@ -7,7 +7,7 @@ const CrmDev = () => {
     return(
         <main>
         <section className="pageSection">
-          <div className="cmsDevImg" />
+          <div className="cmsDevImg pageHeaderImg" />
           <div className="imgText pagePadding">
             <BackToHome page="CRM DEVELOPMENT" />
           </div>

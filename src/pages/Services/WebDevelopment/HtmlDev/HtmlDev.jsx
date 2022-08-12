@@ -48,7 +48,7 @@ const HtmlDev = () => {
             <h1>Our Competence Includes:</h1>
             <ul className="list">
               {htmlList.map((list) => (
-                <li>{list}</li>
+                <li key={list}>{list}</li>
               ))}
             </ul>
           </div>

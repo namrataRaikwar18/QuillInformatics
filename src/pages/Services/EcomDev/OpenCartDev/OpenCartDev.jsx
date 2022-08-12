@@ -1,6 +1,6 @@
 import { BackToHome } from "../../../../Components";
 import { HiOutlineShoppingCart } from "react-icons/hi";
-import "../EcomSubCategory.css";
+import '../../serviceSubCategory.css';
 
 const OpenCartDev = () => {
   const magentoDevList = [
@@ -13,8 +13,8 @@ const OpenCartDev = () => {
   return (
     <main>
       <section className="pageSection">
-        <div className="openCartDevImg" />
-        <div className="imgText pagePadding displayFlex nodeJsHeader">
+        <div className="openCartDevImg pageHeaderImg" />
+        <div className="imgText pagePadding displayFlex nodeJsHeader  ">
           <BackToHome page="OPENCART DEVELOPMENT" />
         </div>
       </section>

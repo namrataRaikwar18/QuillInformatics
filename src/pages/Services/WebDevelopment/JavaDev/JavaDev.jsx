@@ -2,6 +2,17 @@ import { BackToHome } from "../../../../Components";
 import "./JavaDev.css";
 
 const JavaDev = () => {
+  const javaServiceList = [
+    "Customised Java J2EEE Application Development",
+    "Enterprise Java J2EEE Application Development",
+    "Java Architecture & Design Evalutation",
+    "Responsive Web Protals",
+    "Integration of payment gateways",
+    "Application Maintenance",
+    "Bulk Malling Systems",
+    "E-Commerce Websites",
+  ];
+
   return (
     <main>
       <section className="pageSection">
@@ -40,21 +51,12 @@ const JavaDev = () => {
               We optimize the way you desire your product to be. Our services
               include:
             </h3>
-            <ul className="list javaServices displayFlex boldText">
-              <li className="javaService">
-                Customised Java J2EEE Application Development
-              </li>
-              <li className="javaService">
-                Enterprise Java J2EEE Application Development
-              </li>
-              <li className="javaService">
-                Java Architecture & Design Evalutation
-              </li>
-              <li className="javaService">Responsive Web Protals </li>
-              <li className="javaService">Integration of payment gateways</li>
-              <li className="javaService">Application Maintenance</li>
-              <li className="javaService">Bulk Malling Systems</li>
-              <li className="javaService">E-Commerce Websites</li>
+            <ul className="list javaServices  boldText">
+              {javaServiceList.map((list) => (
+                <li className="javaService" key={list}>
+                  {list}
+                </li>
+              ))}
             </ul>
           </div>
         </small>

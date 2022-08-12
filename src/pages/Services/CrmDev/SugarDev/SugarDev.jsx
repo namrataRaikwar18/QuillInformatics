@@ -55,7 +55,7 @@ const SugarDev = () => {
             </p>
             <ul>
               {contentDevList.map((list) => (
-                <li>{list}</li>
+                <li key={list}>{list}</li>
               ))}
             </ul>
           </div>

@@ -40,7 +40,7 @@ const BigCommerceDev = () => {
   return (
     <main>
       <section className="pageSection">
-        <div className="cmsDevImg" />
+        <div className="cmsDevImg pageHeaderImg" />
         <div className="imgText pagePadding displayFlex nodeJsHeader">
           <div className="displayFlex dataAndBackToHome">
             <BackToHome page="BIGCOMMERCE DEVELOPMENT" />

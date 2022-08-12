@@ -10,7 +10,7 @@ const SaasDev = () => {
   return (
     <main>
       <section className="pageSection">
-        <div className="saasDevImg" />
+        <div className="saasDevImg pageHeaderImg" />
         <div className="imgText pagePadding">
           <BackToHome page="SAAS APPLICATION DEVELOPMENT" />
         </div>

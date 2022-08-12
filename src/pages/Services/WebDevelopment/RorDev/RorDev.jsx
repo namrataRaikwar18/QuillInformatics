@@ -58,7 +58,7 @@ const RorDev = () => {
         <div className="pageService displayFlex">
           <div className="serviceContainer displayFlex rightServiceDiv">
             {rightService.map((service) => (
-              <h4>{service}</h4>
+              <h4 key={service}>{service}</h4>
             ))}
           </div>
           <div>
@@ -72,7 +72,7 @@ const RorDev = () => {
           </div>
           <div className="serviceContainer displayFlex leftServiceDiv">
             {leftService.map((service) => (
-              <h4>{service}</h4>
+              <h4 key={service}>{service}</h4>
             ))}
           </div>
         </div>

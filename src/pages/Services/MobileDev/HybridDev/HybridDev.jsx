@@ -1,4 +1,3 @@
-import "./HybridDev.css";
 import { FaStarOfLife } from "react-icons/fa";
 import { BackToHome } from "../../../../Components";
 
@@ -14,7 +13,7 @@ const HybridDev = () => {
   return (
     <main>
       <section className="pageSection">
-        <div className="hybridDevImg" />
+        <div className="hybridDevImg pageHeaderImg" />
         <div className="imgText pagePadding">
           <BackToHome page="HYBRID APP DEVELOPMENT" />
         </div>

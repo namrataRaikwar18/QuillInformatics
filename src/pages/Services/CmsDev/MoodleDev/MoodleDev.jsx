@@ -57,7 +57,7 @@ const MoodleDev = () => {
             <p>We offer the following services for Moodle Development:</p>
             <ul className="list">
               {moodleDevService.map((list) => (
-                <li>{list}</li>
+                <li key={list}>{list}</li>
               ))}
             </ul>
           </div>

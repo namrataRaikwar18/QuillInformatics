@@ -11,7 +11,7 @@ const GoogleDev = () => {
   return (
     <main>
       <section className="pageSection">
-        <div className="googleDevImg" />
+        <div className="googleDevImg pageHeaderImg" />
         <div className=" imgText pagePadding">
           <BackToHome page="GOOGLE CLOUD DEVELOPMENT" />
         </div>

@@ -33,35 +33,25 @@ const AboutUs = () => {
             <small>
               We enable clients to create a future by serving them the finest
               <span className="boldText primaryColorText">
-                
                 IT and Business Solutions Services.
               </span>
               With nearly
               <span className="boldText primaryColorText">
-                
                 six years of experience,
               </span>
               the company manages to do the top-notch work by rendering services
               like
               <span className="boldText">
-                
                 Web Development, Mobile App Development, Product Development,
                 E-Commerce Development,
               </span>
               CMS Development and a lot more. We can steer through your
-              <span className="boldText primaryColorText">
-                
-                digital journey
-              </span>
+              <span className="boldText primaryColorText">digital journey</span>
               with advancement to catalyze the change from the time you hire us.
               We focus on making you reach unprecedented heights with our
-              <span className="boldText primaryColorText">
-                
-                tech expertise.
-              </span>
+              <span className="boldText primaryColorText">tech expertise.</span>
               Our executives work on appealing & efficient
               <span className="boldText primaryColorText">
-                
                 digital development
               </span>
               for error-free business operations also ensuring higher customer
@@ -95,9 +85,7 @@ const AboutUs = () => {
         <section className="aboutImg2section">
           <div className="aboutImg2" />
           <div className="aboutImg2Text lineHeight">
-            
             <em>
-              
               <h3 className="whiteText">
                 “tecHindustan” is an Information Technology Service & Business
                 Solutions Service provider.

@@ -60,7 +60,7 @@ const JoomlaDev = () => {
             </p>
             <ul className="list">
               {moodleDevService.map((list) => (
-                <li>{list}</li>
+                <li key={list}>{list}</li>
               ))}
             </ul>
           </div>

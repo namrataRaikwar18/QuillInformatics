@@ -1,12 +1,11 @@
 import { BackToHome } from "../../../Components";
-import "./ProductDev.css";
 import { FaStarOfLife } from "react-icons/fa";
 
 const ProductDev = () => {
   return (
     <main>
       <section className="pageSection">
-        <div className="productDevImg" />
+        <div className="productDevImg pageHeaderImg" />
         <div className="imgText pagePadding">
           <BackToHome page="PRODUCT DEVELOPMENT" />
         </div>

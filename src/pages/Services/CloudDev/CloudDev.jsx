@@ -1,4 +1,3 @@
-import "./CloudDev.css";
 import { BackToHome } from "../../../Components";
 import { IoCloudyOutline } from "react-icons/io5";
 
@@ -12,7 +11,7 @@ const CloudDev = () => {
   return (
     <main>
       <section className="pageSection">
-        <div className="cloudDevImg" />
+        <div className="cloudDevImg pageHeaderImg" />
         <div className=" imgText pagePadding">
           <BackToHome page="CLOUD SAAS DEVELOPMENT" />
         </div>

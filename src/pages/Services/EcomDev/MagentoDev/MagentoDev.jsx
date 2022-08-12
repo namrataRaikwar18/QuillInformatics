@@ -1,6 +1,6 @@
 import { BackToHome } from "../../../../Components";
 import { FaStarOfLife } from "react-icons/fa";
-import "../EcomSubCategory.css";
+import '../../serviceSubCategory.css';
 
 const MagentoDev = () => {
   const magentoDevList = [
@@ -16,7 +16,7 @@ const MagentoDev = () => {
   return (
     <main>
       <section className="pageSection">
-        <div className="magentoDevImg" />
+        <div className="magentoDevImg pageHeaderImg" />
         <div className="imgText pagePadding displayFlex nodeJsHeader">
           <BackToHome page="MAGENTO DEVELOPMENT" />
         </div>

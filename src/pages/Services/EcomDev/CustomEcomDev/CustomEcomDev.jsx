@@ -1,6 +1,6 @@
 import { BackToHome } from "../../../../Components";
 import { HiOutlineShoppingCart } from "react-icons/hi";
-import "../EcomSubCategory.css";
+import "../../serviceSubCategory.css";
 
 const CustomEcomDev = () => {
   const magentoDevList = [
@@ -11,7 +11,7 @@ const CustomEcomDev = () => {
   return (
     <main>
       <section className="pageSection">
-        <div className="customEcomDevImg" />
+        <div className="customEcomDevImg pageHeaderImg" />
         <div className="imgText pagePadding displayFlex nodeJsHeader">
           <BackToHome page="CUSTOM E-COMMERCE DEVELOPMENT" />
         </div>

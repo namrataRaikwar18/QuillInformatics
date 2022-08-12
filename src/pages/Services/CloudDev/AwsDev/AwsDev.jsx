@@ -10,7 +10,7 @@ const AwsDev = () => {
   return (
     <main>
       <section className="pageSection">
-        <div className="awsDevImg" />
+        <div className="awsDevImg pageHeaderImg" />
         <div className="imgText pagePadding">
           <BackToHome page="AWS DEVELOPMENT" />
         </div>

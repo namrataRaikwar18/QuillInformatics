@@ -1,6 +1,6 @@
 import { BackToHome } from "../../../../Components";
 import { FaStarOfLife } from "react-icons/fa";
-import "../EcomSubCategory.css";
+import '../../serviceSubCategory.css';
 
 const PrestaShopDev = () => {
   const magentoDevList = [
@@ -12,7 +12,7 @@ const PrestaShopDev = () => {
   return (
     <main>
       <section className="pageSection">
-        <div className="prestaShopDevImg" />
+        <div className="prestaShopDevImg pageHeaderImg" />
         <div className="imgText pagePadding displayFlex nodeJsHeader">
           <BackToHome page="PRESTASHOP DEVELOPMENT" />
         </div>

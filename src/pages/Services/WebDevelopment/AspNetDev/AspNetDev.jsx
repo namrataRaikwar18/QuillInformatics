@@ -107,7 +107,7 @@ const AspNetDev = () => {
             {rightFeat.map(({ title, icon, text }) => {
               return (
                 <>
-                  <div className="eachAspFeat displayFlex">
+                  <div className="eachAspFeat displayFlex" key={title}>
                     <p className="aspFeatIcon">{icon}</p>
                     <h2 className="primaryColorText">{title}</h2>
                     <p>{text}</p>
@@ -127,7 +127,7 @@ const AspNetDev = () => {
             {leftFeat.map(({ title, icon, text }) => {
               return (
                 <>
-                  <div className="eachAspFeat displayFlex">
+                  <div className="eachAspFeat displayFlex" key={title}>
                     <p className="aspFeatIcon">{icon}</p>
                     <h2 className="primaryColorText">{title}</h2>
                     <p>{text}</p>
