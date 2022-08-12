@@ -3,35 +3,42 @@
   background-color: var(--modal-bgColor);
   color: black;
   padding-top: 0.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   position: relative;
   width: max-content;
   border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow);
 }
 
 .normalNav,
 .stickyNavPopover {
   position: absolute;
-  top: 120%;
+  top: 57%;
 }
 
 .popover::before {
   content: "";
   border: 12px solid transparent;
   position: absolute;
-  top: -9.5%;
+  top: -5%;
   left: 5%;
   border-bottom-color: var(--modal-bgColor);
 }
 
-.category,
-.subcategoryList {
-  box-sizing: border-box;
-  position: relative;
-  padding: 1rem 1rem 1rem 1.5rem;
+.category {
   border-bottom: 1px solid var(--grey-border);
+  position: relative;
+  cursor: pointer;
+}
+
+.subcategoryList {
+  width: 100%;
+  border-bottom: 1px solid var(--grey-border);
+}
+
+.subcategoryList {
+  padding: 1rem;
+  display: block;
 }
 
 .category:hover,
@@ -43,12 +50,38 @@
   flex-direction: column;
 }
 
+.popoverCategory {
+  padding: 0 2rem 0 1rem;
+  padding: 1rem;
+  display: block;
+  position: relative;
+  padding-right: 1rem;
+}
+
+.categoryWithSubCategory::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 1px;
+  right: 1rem;
+  top: 50%;
+  background-color: var(--bg-greyShade);
+}
+
+.stickyNavPopover {
+  top: 93%;
+}
+
+.categoryActive:active,
+.categoryActive:focus {
+  background-color: #e5e7eb;
+}
 /* __________________________________________ */
 /* subcategory styling*/
 /* ___________________________________________ */
 
 .subcategory {
   position: absolute;
-  right: -63%;
   top: 0;
+  left: 21.2rem;
 }

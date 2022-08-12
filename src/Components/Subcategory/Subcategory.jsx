@@ -1,15 +1,23 @@
 import "../Popover/Popover.css";
 import { Link } from "react-router-dom";
 
-const Subcategory = () => {
+const Subcategory = ({ subcategoryList, closePopOver }) => {
   return (
     <div className="subcategory">
       <ul className="list greyText">
-        <Link to="/">
-          <li className="subcategoryList">PHP Developer</li>
-        </Link>
-        <li className="subcategoryList">PHP Developer</li>
-        <li className="subcategoryList">PHP Developer</li>
+        {subcategoryList.map(({ to, page }) => {
+          return (
+            <li key={to}>
+              <Link
+                to={to}
+                className="subcategoryList link"
+                onClick={closePopOver}
+              >
+                {page}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );
