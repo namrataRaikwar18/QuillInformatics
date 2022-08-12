@@ -19,7 +19,7 @@ const MoodleDev = () => {
   return (
     <main>
       <section className="pageSection">
-        <div className="cmsDevImg cmsDevImg" />
+        <div className="cmsDevImg pageHeaderImg" />
         <div className="imgText pagePadding displayFlex nodeJsHeader">
           <div className="displayFlex dataAndBackToHome">
             <BackToHome page="MOODLE DEVELOPMENT" />
