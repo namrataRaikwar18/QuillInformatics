@@ -3,10 +3,11 @@ import { IoSearch } from "react-icons/io5";
 import { ImCross } from "react-icons/im";
 import { useSearchModal } from "../../context/searchModalContext";
 import { SearchModal, Popover } from "../index";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
 
 const DesktopNav = ({ scrollNav, setScrollNav }) => {
+  const location = useLocation();
   const { searchModal, setSearchModal } = useSearchModal();
   const [popover, setPopover] = useState(false);
 
@@ -37,35 +38,46 @@ const DesktopNav = ({ scrollNav, setScrollNav }) => {
           />
         ) : null}
         <div className="allNavLinks displayFlex">
-          <div className=" servicePopover">
-            <li
-              className="list navLinks services"
-              onMouseLeave={() => setPopover(false)}
-              onMouseEnter={() => setPopover(true)}
-            >
-              Services
-              {popover ? (
-                <Popover
-                  scrollNav={scrollNav}
-                  popover={popover}
-                  setPopover={setPopover}
-                />
-              ) : null}
-              <div></div>
+          <div
+            onMouseEnter={() => setPopover(true)}
+            onMouseLeave={() => setPopover(false)}
+            className="serviceActive"
+          >
+            <li className="list services ">
+              {location.pathname === "/about-us" ||
+              location.pathname === "/contact-us" ||
+              location.pathname === "/" ? (
+                <a
+                  href=""
+                  onClick={(e) => e.preventDefault()}
+                  className="link navLinks"
+                >
+                  Services
+                </a>
+              ) : (
+                <NavLink to="#" className="link navLinks">
+                  Services
+                </NavLink>
+              )}
             </li>
+            {popover ? (
+              <Popover
+                scrollNav={scrollNav}
+                popover={popover}
+                setPopover={setPopover}
+              />
+            ) : null}
           </div>
-          <NavLink
-            to="/about-us"
-            className={`link ${(isActive) => (isActive ? "active" : "")}`}
-          >
-            <li className="list navLinks">About Us</li>
-          </NavLink>
-          <NavLink
-            to="/contact-us"
-            className={`link ${(isActive) => (isActive ? "active" : "")}`}
-          >
-            <li className="list navLinks">Contact Us</li>
-          </NavLink>
+          <li className="list ">
+            <NavLink to="/about-us" className="link navLinks">
+              About Us
+            </NavLink>
+          </li>
+          <li className="list ">
+            <NavLink to="/contact-us" className="link navLinks">
+              Contact Us
+            </NavLink>
+          </li>
           {scrollNav ? (
             searchModal ? (
               <div
