@@ -76,6 +76,23 @@
   transform: translate(-50%, -50%);
 }
 
+.uxReviewContainer {
+  position: relative;
+}
+
+.reviewUxImg {
+  height: 300px;
+}
+
+.uxReview {
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  gap: 2rem;
+  transform: translate(-50%, -50%);
+}
+
 @media screen and (min-width: 767px) {
   .eachMachanism:nth-child(even) {
     margin-right: 50%;

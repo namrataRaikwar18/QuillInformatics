@@ -1,6 +1,7 @@
 import "./UXdesign.css";
 import { BackToHome } from "../../../Components";
 import { BiCalendar } from "react-icons/bi";
+import "../../../Components/ReviewCard/ReviewCard.css";
 
 const UXdesign = () => {
   const mechanismList = [
@@ -60,21 +61,32 @@ const UXdesign = () => {
             <ul className="list displayFlex mechanismContainer">
               {mechanismList.map(({ title, body }) => {
                 return (
-                  <>
-                    <div className="eachMachanism displayFlex" key={title}>
-                      <div className="calenderIcon">
-                        <BiCalendar className="machanismIcon" />
-                      </div>
-                      <h3 className="primaryColorText">{title}</h3>
-                      <li>{body}</li>
+                  <div className="eachMachanism displayFlex" key={title}>
+                    <div className="calenderIcon">
+                      <BiCalendar className="machanismIcon" />
                     </div>
-                  </>
+                    <h3 className="primaryColorText">{title}</h3>
+                    <li>{body}</li>
+                  </div>
                 );
               })}
             </ul>
             <p className="treeTitle">Your Freshly Designed App</p>
           </div>
         </small>
+      </section>
+      <section className="uxReviewContainer">
+        <div className="reviewImage reviewUxImg"></div>
+        <div className="displayFlex uxReview whiteText centerText">
+          <h3>REVIEWS</h3>
+          <p>
+            “tecHindustan” is a totally recommended team for the best UX and UI
+            Designs. They never compromise on their approach for the
+            developments and get back to you with the best possible solutions.
+            They deliver ideas, artwork and create roadmaps for the future
+            installations.
+          </p>
+        </div>
       </section>
     </main>
   );
