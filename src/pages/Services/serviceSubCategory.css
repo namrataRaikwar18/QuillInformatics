@@ -1,0 +1,84 @@
+.pageHeaderImg{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 350px;
+    filter: brightness(0.7);
+}
+
+/* Magentodev styling */
+
+.magentoDevImg{
+    background-image: url('https://techindustan.com/wp-content/uploads/2016/02/magento.jpg');
+}
+
+/* CustomEcomdev styling */
+
+.customEcomDevImg{
+    background-image: url('https://techindustan.com/wp-content/uploads/2016/02/custom_ecommerce.jpg');
+}
+
+/* PrestaShopDev styling */
+
+.prestaShopDevImg{
+    background-image: url('https://techindustan.com/wp-content/uploads/2016/02/prestashop.jpg');
+}
+
+/* opencart dev styling */
+
+.openCartDevImg{
+    background-image: url('https://techindustan.com/wp-content/uploads/2016/02/open_cart.jpg');
+}
+
+/* saas dev styling */
+
+.saasDevImg{
+    background-image: url('https://techindustan.com/wp-content/uploads/2016/02/saas_development.jpg');
+}
+
+/* googledev styling */
+
+.googleDevImg{
+    background-image: url('https://techindustan.com/wp-content/uploads/2016/02/google_cloud_development.jpg');
+}
+
+/* aws dev styling */
+.awsDevImg{
+    background-image: url('https://techindustan.com/wp-content/uploads/2016/02/aws_development.jpg');
+}
+
+/* Product dev styling */
+
+.productDevImg {
+    background-image: url("https://techindustan.com/wp-content/uploads/2016/02/graphic_design.jpg");
+}
+
+/* Hybrid Dev styling*/
+
+.hybridDevImg{
+    background-image: url("https://techindustan.com/wp-content/uploads/2016/02/hybrid.jpg");
+}
+
+/* Drupal dev styling */
+
+.drupalDevImg{
+    background-image: url('https://techindustan.com/wp-content/uploads/2016/02/drupal.jpg');
+}
+
+/* Cloud dev styling */
+.cloudDevImg {
+    background-image: url("https://techindustan.com/wp-content/uploads/2016/02/cloud_saas-development.jpg");
+}
+
+/* wordpress dev styling */
+
+.wordPressImgDevImg {
+    background-image: url("https://techindustan.com/wp-content/uploads/2016/02/wordpress.jpg");
+}
+
+/* cmsDev styling */
+
+.cmsDevImg {
+    background-image: url("https://techindustan.com/wp-content/uploads/2016/02/default_bg.jpg");
+}

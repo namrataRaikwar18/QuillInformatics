@@ -1,9 +1,0 @@
-.drupalDevImg{
-    background-image: url('https://techindustan.com/wp-content/uploads/2016/02/drupal.jpg');
-    background-position: center center;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-    filter: brightness(0.7);
-}
