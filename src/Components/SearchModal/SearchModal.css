@@ -1,39 +1,40 @@
 .searchModalContainer {
-    position: relative;
-    height: 15rem;
-    background-color: transparent;
+  position: relative;
+  height: 15rem;
+  background-color: transparent;
 }
 
-.searchModal {
-    position: absolute;
-    background-color: var(--modal-bgColor);
-    right: 0;
-    z-index: 10;
-    top: 10%;
-    padding: 3rem;
-    box-shadow: 1px 1px 5px 1px var(--grey-border);
+.searchModal,
+.onScrollSerchModal {
+  position: absolute;
+  background-color: var(--modal-bgColor);
+  right: 0;
+  z-index: 10;
+  top: 9.5%;
+  padding: 3rem;
+  box-shadow: 1px 1px 5px 1px var(--grey-border);
 }
 
 .search {
-    outline: none;
-    border: none;
-    border-bottom: 1px solid var(--grey-border);
-    background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--grey-border);
+  background-color: transparent;
 }
 
-@media screen and (min-width:770px) {
-    .onScrollSerchModal{
-        position: absolute;
-        background-color: var(--modal-bgColor);
-        right: 5%;
-        z-index: 10;
-        top: 80%;
-        padding: 3rem;
-        box-shadow: 1px 1px 5px 1px var(--grey-border);
-    }
+@media screen and (min-width: 770px) {
+  .onScrollSerchModal {
+    position: absolute;
+    background-color: var(--modal-bgColor);
+    right: 14rem;
+    z-index: 10;
+    top: 80%;
+    padding: 3rem;
+    box-shadow: 1px 1px 5px 1px var(--grey-border);
+  }
 
-    .searchModal {
-        top: 23%;
-    }
-
+  .searchModal {
+    top: 23%;
+    right: 1rem;
+  }
 }
