@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router'
 import { useState } from 'react'
 import './App.css'
 import { Footer, Navbar, Drawer } from './Components'
-import { AboutUs, AndroidDev, AspNetDev, AwsDev, BigCommerceDev, CloudDev, CmsDev, ContactUs, ContentDev, CrmDev, CustomEcomDev, DigitalMark, DrupalDev, EcomDev, GoogleDev, HtmlDev, HybridDev, IpadDev, IphoneDev, JavaDev, JoomlaDev, Landing, MagentoDev, MobileDev, MoodleDev, NodeJsDev, OpenCartDev, PhpDev, PrestaShopDev, ProductDev, PythonDev, RorDev, SaasDev, SearchEngineDev, ShopifyDev, SocialMedia, SugarDev, UXdesign, VtigerDev, WebDevelopment, WordPressDev, ZohoDev } from './pages'
+import { AboutUs, AndroidDev, AspNetDev, AwsDev, BigCommerceDev, CloudDev, CmsDev, ContactUs, ContentDev, CrmDev, CustomEcomDev, DigitalMark, DrupalDev, EcomDev, Error404, GoogleDev, HtmlDev, HybridDev, IpadDev, IphoneDev, JavaDev, JoomlaDev, Landing, MagentoDev, MobileDev, MoodleDev, NodeJsDev, OpenCartDev, PhpDev, PrestaShopDev, ProductDev, PythonDev, RorDev, SaasDev, SearchEngineDev, ShopifyDev, SocialMedia, SugarDev, UXdesign, VtigerDev, WebDevelopment, WordPressDev, ZohoDev } from './pages'
 
 function App() {
   const [openDrawer, setOpenDrawer] = useState(false)
@@ -56,6 +56,7 @@ function App() {
         <Route path='/sugarcrm-development' element={<SugarDev />} />
         <Route path='/zoho-crm-development' element={<ZohoDev />} />
         <Route path='/vtigercrm-development' element={<VtigerDev />} />
+        <Route path='*' element={<Error404 />}/>
       </Routes>
       <Footer />
     </div>

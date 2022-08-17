@@ -9,14 +9,14 @@
 
 .mainPage {
     flex-direction: column;
-    gap: 2rem;
+    gap: 32px;
 }
 
 
 .imageText1 {
     background: linear-gradient(to right, rgba(0, 0, 0, .25) 40%, rgba(0, 0, 0, 0) 100%);
     transform: skew(-20deg);
-    top: 48rem;
+    top: 768px;
     width: fit-content;
 }
 
@@ -25,37 +25,37 @@
 }
 
 .imageText {
-    border-radius: 1rem;
+    border-radius: 16px;
     color: white;
-    padding: 1.5rem;
+    padding: 24px;
 }
 
 .imageTextContainer {
     position: absolute;
     top: 59%;
-    gap: 2rem;
+    gap: 32px;
     flex-direction: column;
-    padding: 2rem;
+    padding: 32px;
 }
 
 .imageText2 {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     background-color: var(--bg-blackShade);
-    border-right: 4px solid black;
+    border-right: .25rem solid black;
     transform: skew(-20deg);
 }
 
 .detailCard {
-    padding: 4rem;
-    border-radius: 6px;
+    padding: 64px;
+    border-radius: .375rem;
     color: white;
-    margin-top: 5rem;
+    margin-top: 80px;
     position: relative;
     background-color: #1789b3;
     text-align: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 32px;
 }
 
 
@@ -64,7 +64,7 @@
     content: '';
     background-color: rgba(0, 0, 0, .2);
     width: 95%;
-    border-radius: 4px;
+    border-radius: .25rem;
     display: block;
     height: 30%;
     top: -20%;
@@ -79,7 +79,7 @@
     content: '';
     background-color: var(--primary-color);
     width: 100%;
-    border-radius: 4px;
+    border-radius: .25rem;
     display: block;
     height: 100%;
     top: -13%;
@@ -95,15 +95,15 @@
 }
 
 .userAddCardContainer {
-    padding: 2rem;
+    padding: 32px;
     flex-direction: column;
-    gap: 2rem;
+    gap: 32px;
     justify-content: center;
 }
 
 .allUserCard {
     flex-direction: column;
-    gap: 3rem;
+    gap: 48px;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
@@ -111,7 +111,7 @@
 .imageText3 {
     background-color: rgba(41, 31, 31, 0.4);
     border: none;
-    font-size: 1.5rem;
+    font-size: 24px;
     width: fit-content;
     display: none;
 }
@@ -123,12 +123,19 @@
 .allAddCards {
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 32px;
 }
 
-@media screen and (min-width:550px) {
+/* Error 404 styling */
+
+div .error404Img {
+    background-image: url('https://colorlib.com/cdn-cgi/image/width=1920,height=933,fit=crop,quality=80,format=auto,onerror=redirect,metadata=none/wp-content/uploads/sites/2/404-error-template-3.png');
+    height: 500px;
+}
+
+@media screen and (min-width:34.375rem) {
     .featureCards {
-        border-width: 1px 0 0 1px;
+        border-width: .0625rem 0 0 .0625rem;
         border-style: solid;
         border-color: var(--grey-border);
         flex-direction: row;
@@ -137,7 +144,7 @@
     }
 }
 
-@media screen and (min-width:770px) {
+@media screen and (min-width:48.125rem) {
     .landingPage {
         background-attachment: fixed;
     }
@@ -160,7 +167,7 @@
     }
 }
 
-@media screen and (min-width:820px) {
+@media screen and (min-width:51.25rem) {
     .allUserCard {
         flex-direction: row;
         flex-wrap: nowrap;

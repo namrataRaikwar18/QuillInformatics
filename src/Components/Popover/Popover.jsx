@@ -311,7 +311,7 @@ const Popover = ({ scrollNav, drawerSubcategory, setPopover }) => {
           <li className="category">
             <Link
               onClick={closePopOver}
-              to="user-experience-ux-design"
+              to="/user-experience-ux-design"
               className="categoryActive link popoverCategory"
             >
               User Experience(UX) Design

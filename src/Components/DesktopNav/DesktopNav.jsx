@@ -1,32 +1,72 @@
-import "./DesktopNav.css";
-import { IoSearch } from "react-icons/io5";
-import { ImCross } from "react-icons/im";
-import { useSearchModal } from "../../context/searchModalContext";
-import { SearchModal, Popover } from "../index";
-import { NavLink, useLocation } from "react-router-dom";
-import { useState } from "react";
+import './DesktopNav.css'
+import { IoSearch } from 'react-icons/io5'
+import { ImCross } from 'react-icons/im'
+import { useSearchModal } from '../../context/searchModalContext'
+import { SearchModal, Popover } from '../index'
+import { NavLink, useLocation } from 'react-router-dom'
+import { useState } from 'react'
 
 const DesktopNav = ({ scrollNav, setScrollNav }) => {
-  const location = useLocation();
-  const { searchModal, setSearchModal } = useSearchModal();
-  const [popover, setPopover] = useState(false);
+  const location = useLocation()
+  const allPathNames = [
+    '/web-development',
+    '/mobile-app-development',
+    '/cms-development',
+    '/e-commerce-development',
+    '/cloud-saas-development',
+    '/digital-marketing',
+    '/crm-development',
+    '/product-development',
+    '/user-experience-ux-design',
+    '/php-development',
+    '/asp-net-development',
+    '/java-web-development',
+    '/python-web-development',
+    '/ruby-on-rails-development',
+    '/node-js-development',
+    '/html5-canvas-development',
+    '/iphone-app-development',
+    '/ipad-app-development',
+    '/android-app-development',
+    '/hybrid-app-development',
+    '/wordpress-development',
+    '/drupal-development',
+    '/moodle-development',
+    '/joomla-development',
+    '/magento-development',
+    '/custom-e-commerce-development',
+    '/prestashop-development',
+    '/shopify-development',
+    '/bigcommerce-development',
+    '/opencart-development',
+    '/saas-application-development',
+    '/google-cloud-development',
+    '/search-engine-optimization',
+    '/content-development',
+    '/social-media-marketing',
+    '/sugarcrm-development',
+    '/zoho-crm-development',
+    '/vtigercrm-development',
+  ]
+  const { searchModal, setSearchModal } = useSearchModal()
+  const [popover, setPopover] = useState(false)
 
   const scrollHandler = () => {
     if (window.scrollY > 10) {
-      setScrollNav(true);
+      setScrollNav(true)
     } else {
-      setScrollNav(false);
+      setScrollNav(false)
     }
-  };
+  }
 
-  window.addEventListener("scroll", scrollHandler);
+  window.addEventListener('scroll', scrollHandler)
 
   return (
     <div
       className={
         scrollNav
-          ? "scrollNav displayflex desktopNav"
-          : "desktopNav displayflex"
+          ? 'scrollNav displayflex desktopNav'
+          : 'desktopNav displayflex'
       }
     >
       <ul className="desktopLinks displayFlex ">
@@ -44,20 +84,17 @@ const DesktopNav = ({ scrollNav, setScrollNav }) => {
             className="serviceActive"
           >
             <li className="list services ">
-              {location.pathname === "/about-us" ||
-              location.pathname === "/contact-us" ||
-              location.pathname === "/" ? (
+              {allPathNames.includes(location.pathname) ? (
+                <NavLink to="#" className="link navLinks">
+                  Services
+                </NavLink>
+              ) : (
                 <a
-                  href=""
                   onClick={(e) => e.preventDefault()}
                   className="link navLinks"
                 >
                   Services
                 </a>
-              ) : (
-                <NavLink to="#" className="link navLinks">
-                  Services
-                </NavLink>
               )}
             </li>
             {popover ? (
@@ -102,7 +139,7 @@ const DesktopNav = ({ scrollNav, setScrollNav }) => {
         {searchModal ? <SearchModal scrollNav={scrollNav} /> : null}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export { DesktopNav };
+export { DesktopNav }

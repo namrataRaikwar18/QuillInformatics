@@ -41,3 +41,4 @@ export {SocialMedia} from './Services/DigitalMark/SocialMedia/SocialMedia';
 export {SugarDev} from './Services/CrmDev/SugarDev/SugarDev';
 export {ZohoDev} from './Services/CrmDev/ZohoDev/ZohoDev';
 export {VtigerDev} from './Services/CrmDev/VtigerDev/VtigerDev';
+export {Error404} from './Error404/Error404';
