@@ -106,13 +106,11 @@ const AspNetDev = () => {
           <div className="featureContainer displayFlex rightFeatContainer">
             {rightFeat.map(({ title, icon, text }) => {
               return (
-                <>
                   <div className="eachAspFeat displayFlex" key={title}>
                     <p className="aspFeatIcon">{icon}</p>
                     <h2 className="primaryColorText">{title}</h2>
                     <p>{text}</p>
                   </div>
-                </>
               );
             })}
           </div>
@@ -126,13 +124,11 @@ const AspNetDev = () => {
           <div className=" featureContainer displayFlex leftFeatContainer">
             {leftFeat.map(({ title, icon, text }) => {
               return (
-                <>
                   <div className="eachAspFeat displayFlex" key={title}>
                     <p className="aspFeatIcon">{icon}</p>
                     <h2 className="primaryColorText">{title}</h2>
                     <p>{text}</p>
                   </div>
-                </>
               );
             })}
           </div>

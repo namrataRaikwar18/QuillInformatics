@@ -1,5 +1,4 @@
 .desktopNav {
-  color: white;
   padding: 0 13rem 0 1rem;
 }
 
@@ -30,6 +29,7 @@
   align-items: center;
   border-radius: var(--border-radius);
   padding: 1rem;
+  color: white;
 }
 
 .services {

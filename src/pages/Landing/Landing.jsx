@@ -16,7 +16,7 @@ const Landing = () => {
           <p>Crafting Ultimate Products to</p>
         </h2>
         <h2 className="imageText imageText2">
-          <p>Discover the Chapter of Pofits with Tech Development</p>
+          <p>Discover the Chapter of Profits with Tech Development</p>
         </h2>
         <h2 className="imageText imageText2 imageText3">
           <p>

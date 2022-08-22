@@ -49,6 +49,7 @@ const DesktopNav = ({ scrollNav, setScrollNav }) => {
     '/vtigercrm-development',
   ]
   const { searchModal, setSearchModal } = useSearchModal()
+  const {searchModalIsOpen} = searchModal
   const [popover, setPopover] = useState(false)
 
   const scrollHandler = () => {
@@ -116,17 +117,17 @@ const DesktopNav = ({ scrollNav, setScrollNav }) => {
             </NavLink>
           </li>
           {scrollNav ? (
-            searchModal ? (
+            searchModalIsOpen ? (
               <div
                 className="navIcons crossIcon displayFlex"
-                onClick={() => setSearchModal(false)}
+                onClick={() => setSearchModal({...searchModal, searchModalIsOpen:false})}
               >
                 <ImCross />
               </div>
             ) : (
               <div
                 className="navIcons searchIcon displayFlex"
-                onClick={() => setSearchModal(true)}
+                onClick={() => setSearchModal({...searchModal, searchModalIsOpen:true})}
               >
                 <IoSearch />
               </div>
@@ -136,7 +137,7 @@ const DesktopNav = ({ scrollNav, setScrollNav }) => {
       </ul>
 
       <div className="desktopSearch">
-        {searchModal ? <SearchModal scrollNav={scrollNav} /> : null}
+        {searchModalIsOpen ? <SearchModal scrollNav={scrollNav} /> : null}
       </div>
     </div>
   )

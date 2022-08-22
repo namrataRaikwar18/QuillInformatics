@@ -22,10 +22,44 @@
   background-color: transparent;
 }
 
+.searchMain {
+  position: relative;
+}
+
+.searchResultSection {
+  background-color: var(--modal-bgColor);
+  position: absolute;
+  top: 9rem;
+  width: 100%;
+  left: 0;
+}
+
+.eachSearchList {
+  padding: 1rem;
+  display: block;
+}
+
+.searchList:hover {
+  background-color: var(--grey-border);
+}
+
+.searchResultList {
+  max-height: 20rem;
+  overflow-y: auto;
+}
+
+.searchResultList::-webkit-scrollbar {
+  width: 5px;
+}
+
+.searchResultList::-webkit-scrollbar-thumb {
+  background-color: var(--bg-greyShade);
+  border-radius: 2rem;
+}
+
 @media screen and (min-width: 770px) {
   .onScrollSerchModal {
     position: absolute;
-    background-color: var(--modal-bgColor);
     right: 14rem;
     z-index: 10;
     top: 80%;

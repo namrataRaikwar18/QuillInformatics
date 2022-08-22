@@ -5,7 +5,8 @@ const searchModalContext = createContext()
 const useSearchModal = () => useContext(searchModalContext)
 
 const SearchModalProvider = ({ children }) => {
-  const [searchModal, setSearchModal] = useState(false)
+  
+  const [searchModal, setSearchModal] = useState({searchModalIsOpen:false, searchText:""})
 
   return (
     <searchModalContext.Provider value={{ searchModal, setSearchModal }}>

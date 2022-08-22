@@ -11,6 +11,7 @@ import "./Navbar.css";
 const Navbar = ({ openDrawer, setOpenDrawer }) => {
   const [scrollNav, setScrollNav] = useState(false);
   const { searchModal, setSearchModal } = useSearchModal();
+  const {searchModalIsOpen} = searchModal
 
   const hamburgerHandler = () => {
     setOpenDrawer(!openDrawer);
@@ -42,17 +43,17 @@ const Navbar = ({ openDrawer, setOpenDrawer }) => {
               <BsTwitter />
               <FaPinterestP />
             </div>
-            {searchModal ? (
+            {searchModalIsOpen ? (
               <div
                 className="navIcons crossIcon displayFlex"
-                onClick={() => setSearchModal(false)}
+                onClick={() => setSearchModal({...searchModal, searchModalIsOpen:false})}
               >
                 <ImCross />
               </div>
             ) : (
               <div
                 className="navIcons searchIcon displayFlex"
-                onClick={() => setSearchModal(true)}
+                onClick={() => setSearchModal({...searchModal, searchModalIsOpen:true})}
               >
                 <IoSearch />
               </div>
@@ -75,7 +76,7 @@ const Navbar = ({ openDrawer, setOpenDrawer }) => {
               <GiHamburgerMenu onClick={hamburgerHandler} />
             </div>
           </nav>
-          {searchModal ? <SearchModal scrollNav={scrollNav} /> : null}
+          {searchModalIsOpen ? <SearchModal scrollNav={scrollNav} /> : null}
         </section>
       </header>
     </>

@@ -1,10 +1,6 @@
-import { useLocation } from 'react-router'
 import { BackToHome } from '../../Components'
 
-
 const Error404 = () => {
-  const location = useLocation()
-  console.log(location.pathname)
   return (
     <main>
       <section className="pageSection">
