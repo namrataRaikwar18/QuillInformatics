@@ -39,9 +39,15 @@ const Navbar = ({ openDrawer, setOpenDrawer }) => {
             }
           >
             <div className="navIcons displayFlex">
+              <a href="https://www.facebook.com/techindustan" target='_blank' className="link">
               <FaFacebookF />
+              </a>
+              <a href="https://twitter.com/techindustan" target='_blank' className="link">
               <BsTwitter />
+              </a>
+              <a href="https://www.pinterest.com/techindustan/" target='_blank' className="link">
               <FaPinterestP />
+              </a>
             </div>
             {searchModalIsOpen ? (
               <div
